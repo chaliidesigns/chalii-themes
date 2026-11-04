@@ -1,6 +1,6 @@
 {
     "$schema": "./palette.schema.json",
-    "_comment": "Source of truth for Makinda Themes colors. Every editor port (VS Code, JetBrains, Sublime, Zed, Vim, Xcode, terminals, …) must derive from this file. See docs/THEMES.md for semantic role descriptions.",
+    "_comment": "Source of truth for Chalii Themes colors. Every editor port (VS Code, JetBrains, Sublime, Zed, Vim, Xcode, terminals, …) must derive from this file. See docs/THEMES.md for semantic role descriptions.",
     "version": "1.0.1",
     "variants": {
         "dark": {

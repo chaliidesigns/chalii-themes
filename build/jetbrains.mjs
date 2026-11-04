@@ -9,10 +9,10 @@
  *     Schema: TextMate-style attributes per token type.
  *
  * Output:
- *   ports/jetbrains/src/main/resources/themes/makinda-light.theme.json
- *   ports/jetbrains/src/main/resources/themes/makinda-light.icls
- *   ports/jetbrains/src/main/resources/themes/makinda-dark.theme.json
- *   ports/jetbrains/src/main/resources/themes/makinda-dark.icls
+ *   ports/jetbrains/src/main/resources/themes/chalii-light.theme.json
+ *   ports/jetbrains/src/main/resources/themes/chalii-light.icls
+ *   ports/jetbrains/src/main/resources/themes/chalii-dark.theme.json
+ *   ports/jetbrains/src/main/resources/themes/chalii-dark.icls
  *
  * The static Gradle scaffold (plugin.xml, build.gradle.kts, etc.) lives next
  * to these files and is not regenerated.
@@ -33,10 +33,10 @@ const rgba = (hex) => hex.replace("#", "").toUpperCase();
 function buildThemeJson(variant, c) {
     const isDark = variant === "dark";
     return {
-        name: `Makinda ${isDark ? "Dark" : "Light"}`,
+        name: `Chalii ${isDark ? "Dark" : "Light"}`,
         dark: isDark,
         author: "Jackson Makinda",
-        editorScheme: `/themes/makinda-${variant}.icls`,
+        editorScheme: `/themes/chalii-${variant}.icls`,
         colors: {
             // Named palette references usable from the `ui` map below via "namedKey".
             brandPrimary: c("brand.primary"),
@@ -288,7 +288,7 @@ function attr(name, fg, opts = {}) {
 function buildIcls(variant, c) {
     const isDark = variant === "dark";
     const parent = isDark ? "Darcula" : "Default";
-    const name = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const name = `Chalii ${isDark ? "Dark" : "Light"}`;
 
     // Italic = 2, Bold = 1.
     const italic = { fontType: 2 };
@@ -426,6 +426,6 @@ console.log("Building JetBrains themes…");
 for (const variant of VARIANTS) {
     const c = makeResolver(palette, variant);
     const json = JSON.stringify(buildThemeJson(variant, c), null, 2) + "\n";
-    writeOut(`ports/jetbrains/src/main/resources/themes/makinda-${variant}.theme.json`, json);
-    writeOut(`ports/jetbrains/src/main/resources/themes/makinda-${variant}.icls`, buildIcls(variant, c));
+    writeOut(`ports/jetbrains/src/main/resources/themes/chalii-${variant}.theme.json`, json);
+    writeOut(`ports/jetbrains/src/main/resources/themes/chalii-${variant}.icls`, buildIcls(variant, c));
 }

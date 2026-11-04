@@ -1,6 +1,6 @@
 # Installation Guide
 
-This guide covers all methods for installing the Makinda Themes extension.
+This guide covers all methods for installing the Chalii Themes extension.
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ This guide covers all methods for installing the Makinda Themes extension.
    - Or click the Extensions icon in the Activity Bar
 
 3. **Search for Theme**
-   - Type `Makinda Themes` in the search box
+   - Type `Chalii Themes` in the search box
    - Look for the extension by **Jackson Makinda**
 
 4. **Install**
@@ -27,12 +27,12 @@ This guide covers all methods for installing the Makinda Themes extension.
 5. **Activate a Theme**
    - Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS)
    - Type `Color Theme`
-   - Select **Makinda Light** or **Makinda Dark**
+   - Select **Chalii Light** or **Chalii Dark**
 
 ### Method 2: Quick Open
 
 1. Press `Ctrl+P` (Windows/Linux) or `Cmd+P` (macOS)
-2. Paste: `ext install makindajack.makinda-themes`
+2. Paste: `ext install makindajack.chalii-themes`
 3. Press Enter
 
 ### Method 3: VSIX File
@@ -42,7 +42,7 @@ For offline installation or pre-release versions:
 ```bash
 # Download the .vsix file from GitHub releases
 # Then install via command line:
-code --install-extension makinda-themes-1.0.0.vsix
+code --install-extension chalii-themes-1.0.0.vsix
 ```
 
 Or in VS Code:
@@ -58,7 +58,7 @@ Or in VS Code:
 git clone https://github.com/chaliidesigns/chalii-themes.git
 
 # Open in VS Code
-code makinda-themes
+code chalii-themes
 
 # Press F5 to launch Extension Development Host
 # The theme will be available in the new window
@@ -66,20 +66,20 @@ code makinda-themes
 
 ## Compatible Editors
 
-Makinda Themes is a standard VS Code color-theme extension, so it runs in every editor that consumes the VS Code extension format. Pick the install path that matches your editor's marketplace.
+Chalii Themes is a standard VS Code color-theme extension, so it runs in every editor that consumes the VS Code extension format. Pick the install path that matches your editor's marketplace.
 
 ### Cursor
 
 Cursor reuses the VS Code extension API and ships its own copy of the Marketplace, so the extension installs the same way as in VS Code.
 
 1. Open Cursor → **Extensions** (`⌘⇧X` / `Ctrl+Shift+X`).
-2. Search `Makinda Themes` (publisher: `makindajack`).
-3. Click **Install** → then `⌘K ⌘T` / `Ctrl+K Ctrl+T` and choose **Makinda Light** or **Makinda Dark**.
+2. Search `Chalii Themes` (publisher: `makindajack`).
+3. Click **Install** → then `⌘K ⌘T` / `Ctrl+K Ctrl+T` and choose **Chalii Light** or **Chalii Dark**.
 
 If your Cursor build is pinned to Open VSX instead of the VS Code Marketplace, install with:
 
 ```bash
-cursor --install-extension makindajack.makinda-themes
+cursor --install-extension makindajack.chalii-themes
 ```
 
 ### Windsurf (Codeium)
@@ -87,13 +87,13 @@ cursor --install-extension makindajack.makinda-themes
 Windsurf ships with the Open VSX marketplace by default.
 
 1. Open Windsurf → **Extensions**.
-2. Search `Makinda Themes` (publisher: `makindajack`) — the listing comes from <https://open-vsx.org/extension/chaliidesigns/chalii-themes>.
+2. Search `Chalii Themes` (publisher: `makindajack`) — the listing comes from <https://open-vsx.org/extension/chaliidesigns/chalii-themes>.
 3. Install, then activate the theme exactly as in VS Code.
 
 CLI alternative:
 
 ```bash
-windsurf --install-extension makindajack.makinda-themes
+windsurf --install-extension makindajack.chalii-themes
 ```
 
 ### VSCodium / code-server / Gitpod / other forks
@@ -101,15 +101,15 @@ windsurf --install-extension makindajack.makinda-themes
 Any fork that uses the Open VSX registry can install via Extensions search or:
 
 ```bash
-codium --install-extension makindajack.makinda-themes
+codium --install-extension makindajack.chalii-themes
 # code-server: same flag, just substitute the binary
 ```
 
 ### Offline / air-gapped (any of the above)
 
-Download `makinda-themes-<version>.vsix` from [GitHub Releases](https://github.com/chaliidesigns/chalii-themes/releases) and install with the editor's `--install-extension` flag, or via **Command Palette → Extensions: Install from VSIX…**.
+Download `chalii-themes-<version>.vsix` from [GitHub Releases](https://github.com/chaliidesigns/chalii-themes/releases) and install with the editor's `--install-extension` flag, or via **Command Palette → Extensions: Install from VSIX…**.
 
-> Tip: regardless of editor, you can enable OS-appearance auto-switching with `window.autoDetectColorScheme` + `workbench.preferredLightColorTheme: "Makinda Light"` + `workbench.preferredDarkColorTheme: "Makinda Dark"` in your settings.
+> Tip: regardless of editor, you can enable OS-appearance auto-switching with `window.autoDetectColorScheme` + `workbench.preferredLightColorTheme: "Chalii Light"` + `workbench.preferredDarkColorTheme: "Chalii Dark"` in your settings.
 
 ## Native Ports (non-VS-Code editors, terminals, apps)
 
@@ -120,12 +120,12 @@ All ports live under [`ports/<editor>/`](../ports/) and are generated from the s
 - **JetBrains** — [`ports/jetbrains/`](../ports/jetbrains/): `./gradlew buildPlugin`, then **Settings → Plugins → ⚙ → Install Plugin from Disk…**
 - **Sublime Text** — [`ports/sublime/`](../ports/sublime/): copy `.sublime-color-scheme` files into `Packages/User/`.
 - **Zed** — [`ports/zed/`](../ports/zed/): `zed --install-dev-extension ports/zed`.
-- **Neovim / Vim** — [`ports/neovim/`](../ports/neovim/): add `colors/` + `lua/` to runtimepath, then `:colorscheme makinda-dark` (or `-light`).
+- **Neovim / Vim** — [`ports/neovim/`](../ports/neovim/): add `colors/` + `lua/` to runtimepath, then `:colorscheme chalii-dark` (or `-light`).
 - **Xcode** — [`ports/xcode/`](../ports/xcode/): copy `*.xccolortheme` into `~/Library/Developer/Xcode/UserData/FontAndColorThemes/`.
-- **Helix** — [`ports/helix/`](../ports/helix/): copy `*.toml` into `~/.config/helix/themes/`, then `:theme makinda_dark`.
+- **Helix** — [`ports/helix/`](../ports/helix/): copy `*.toml` into `~/.config/helix/themes/`, then `:theme chalii_dark`.
 - **Visual Studio** — [`ports/visual-studio/`](../ports/visual-studio/): **Tools → Import and Export Settings…** → import `.vssettings`.
 - **Eclipse** — [`ports/eclipse/`](../ports/eclipse/): **File → Import → Preferences** → select `.epf`.
-- **Emacs** — [`ports/emacs/`](../ports/emacs/): drop `.el` into `custom-theme-load-path`, `M-x load-theme RET makinda-dark`.
+- **Emacs** — [`ports/emacs/`](../ports/emacs/): drop `.el` into `custom-theme-load-path`, `M-x load-theme RET chalii-dark`.
 - **TextMate** — [`ports/textmate/`](../ports/textmate/): double-click `.tmTheme`.
 - **BBEdit** — [`ports/bbedit/`](../ports/bbedit/): copy `.bbcolors` into `~/Library/Application Support/BBEdit/Color Schemes/`.
 - **Nova** — [`ports/nova/`](../ports/nova/): double-click the `.novaextension` bundle.
@@ -137,7 +137,7 @@ All ports live under [`ports/<editor>/`](../ports/) and are generated from the s
 - **iTerm2** — [`ports/iterm2/`](../ports/iterm2/): double-click `.itermcolors`, then **Profiles → Colors → Color Presets**.
 - **Warp** — [`ports/warp/`](../ports/warp/): copy YAML into `~/.warp/themes/`.
 - **Alacritty** — [`ports/alacritty/`](../ports/alacritty/): `import` the TOML in your `alacritty.toml`.
-- **Kitty** — [`ports/kitty/`](../ports/kitty/): `include makinda_dark.conf` in `~/.config/kitty/kitty.conf`.
+- **Kitty** — [`ports/kitty/`](../ports/kitty/): `include chalii_dark.conf` in `~/.config/kitty/kitty.conf`.
 - **WezTerm** — [`ports/wezterm/`](../ports/wezterm/): `require` the Lua file in `wezterm.lua`.
 - **Ghostty** — [`ports/ghostty/`](../ports/ghostty/): copy file into `$XDG_CONFIG_HOME/ghostty/themes/`.
 - **Windows Terminal** — [`ports/windows-terminal/`](../ports/windows-terminal/): paste the JSON object into `schemes` in `settings.json`.
@@ -154,7 +154,7 @@ For build-from-source instructions and per-port architecture notes, see [DEVELOP
 
 1. Open Command Palette (`Ctrl+Shift+P`)
 2. Type `Color Theme`
-3. You should see both **Makinda Light** and **Makinda Dark** in the list
+3. You should see both **Chalii Light** and **Chalii Dark** in the list
 
 ## Recommended Companion Extensions
 
@@ -176,7 +176,7 @@ Add these to your `settings.json` for optimal experience:
 
 ```json
 {
-  "workbench.colorTheme": "Makinda Light",
+  "workbench.colorTheme": "Chalii Light",
   "editor.fontFamily": "JetBrains Mono, Fira Code, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
@@ -210,10 +210,10 @@ Add these to your `settings.json` for optimal experience:
 
    ```bash
    # Windows
-   rd /s /q %USERPROFILE%\.vscode\extensions\makindajack.makinda-themes-*
+   rd /s /q %USERPROFILE%\.vscode\extensions\makindajack.chalii-themes-*
 
    # macOS/Linux
-   rm -rf ~/.vscode/extensions/makindajack.makinda-themes-*
+   rm -rf ~/.vscode/extensions/makindajack.chalii-themes-*
    ```
 
 3. Reinstall the extension
@@ -221,13 +221,13 @@ Add these to your `settings.json` for optimal experience:
 ## Uninstallation
 
 1. Open Extensions panel (`Ctrl+Shift+X`)
-2. Find **Makinda Light**
+2. Find **Chalii Light**
 3. Click **Uninstall**
 
 Or via command line:
 
 ```bash
-code --uninstall-extension makindajack.makinda-themes
+code --uninstall-extension makindajack.chalii-themes
 ```
 
 ## Getting Help

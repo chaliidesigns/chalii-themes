@@ -1,4 +1,4 @@
-# Makinda Themes — Emacs
+# Chalii Themes — Emacs
 
 ## Install (manual)
 
@@ -7,17 +7,17 @@ e.g. `~/.emacs.d/themes/`, and load:
 
 ```elisp
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'makinda-dark t)
+(load-theme 'chalii-dark t)
 ;; or
-(load-theme 'makinda-light t)
+(load-theme 'chalii-light t)
 ```
 
 ## Install (use-package + straight.el)
 
 ```elisp
-(use-package makinda-themes
+(use-package chalii-themes
   :straight (:host github :repo "chaliidesigns/chalii-themes" :files ("ports/emacs/*.el"))
-  :config (load-theme 'makinda-dark t))
+  :config (load-theme 'chalii-dark t))
 ```
 
 ## Coverage

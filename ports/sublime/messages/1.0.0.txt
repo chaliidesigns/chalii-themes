@@ -1,10 +1,10 @@
-Makinda Themes 1.0.0
+Chalii Themes 1.0.0
 ====================
 
-Initial Package Control release of Makinda Themes for Sublime Text.
+Initial Package Control release of Chalii Themes for Sublime Text.
 
 Includes:
-  - Makinda Light
-  - Makinda Dark
+  - Chalii Light
+  - Chalii Dark
 
 Activate via: Preferences > Select Color Scheme...

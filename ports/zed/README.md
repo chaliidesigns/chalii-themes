@@ -1,12 +1,12 @@
-# Makinda Themes — Zed
+# Chalii Themes — Zed
 
 Premium light and dark themes for [Zed](https://zed.dev) with warm orange
 accents and excellent readability.
 
 ## Variants
 
-- **Makinda Light**
-- **Makinda Dark**
+- **Chalii Light**
+- **Chalii Dark**
 
 ## Install (dev / local)
 
@@ -19,8 +19,8 @@ accents and excellent readability.
    {
      "theme": {
        "mode": "system",
-       "light": "Makinda Light",
-       "dark": "Makinda Dark"
+       "light": "Chalii Light",
+       "dark": "Chalii Dark"
      }
    }
    ```
@@ -30,7 +30,7 @@ accents and excellent readability.
 Once published to the Zed extension registry:
 
 1. Open the command palette → **zed: extensions**.
-2. Search for **Makinda Themes** and click **Install**.
+2. Search for **Chalii Themes** and click **Install**.
 3. Activate via **zed: theme selector**.
 
 ## Source of truth

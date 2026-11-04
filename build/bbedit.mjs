@@ -2,8 +2,8 @@
 /**
  * Generate BBEdit `.bbcolors` files (XML plist) from source/palette.json.
  * Output:
- *   ports/bbedit/Makinda Light.bbcolors
- *   ports/bbedit/Makinda Dark.bbcolors
+ *   ports/bbedit/Chalii Light.bbcolors
+ *   ports/bbedit/Chalii Dark.bbcolors
  *
  * BBEdit color schemes are plists with R/G/B float (0..1) triples.
  * Install: BBEdit → Preferences → Editor → Text Colors → "+" / drop the file.
@@ -36,7 +36,7 @@ function colorEntry(key, hex) {
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const label = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const label = `Chalii ${isDark ? "Dark" : "Light"}`;
 
     const colors = [
         ["BackgroundColor", c("bg.editor")],
@@ -94,5 +94,5 @@ ${colors.map(([k, v]) => colorEntry(k, v)).join("\n")}
 console.log("Building BBEdit themes\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
-    writeOut(`ports/bbedit/Makinda ${label}.bbcolors`, build(v));
+    writeOut(`ports/bbedit/Chalii ${label}.bbcolors`, build(v));
 }

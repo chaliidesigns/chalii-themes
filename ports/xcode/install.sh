@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install Makinda Themes for Xcode.
+# Install Chalii Themes for Xcode.
 #
 # Copies both .xccolortheme files into Xcode's user themes directory:
 #   ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
@@ -14,7 +14,7 @@ SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p "$DEST"
 
-for f in "Makinda Light.xccolortheme" "Makinda Dark.xccolortheme"; do
+for f in "Chalii Light.xccolortheme" "Chalii Dark.xccolortheme"; do
     if [[ ! -f "$SRC/$f" ]]; then
         echo "missing: $SRC/$f" >&2
         exit 1
@@ -24,4 +24,4 @@ for f in "Makinda Light.xccolortheme" "Makinda Dark.xccolortheme"; do
 done
 
 echo
-echo "Restart Xcode, then choose: Xcode → Settings → Themes → Makinda Light / Dark."
+echo "Restart Xcode, then choose: Xcode → Settings → Themes → Chalii Light / Dark."

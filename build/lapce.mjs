@@ -2,8 +2,8 @@
 /**
  * Generate Lapce themes (TOML) from source/palette.json.
  * Output:
- *   ports/lapce/makinda-light.toml
- *   ports/lapce/makinda-dark.toml
+ *   ports/lapce/chalii-light.toml
+ *   ports/lapce/chalii-dark.toml
  *
  * Lapce theme reference: https://docs.lapce.dev/customize-theme
  * Drop into ~/.config/lapce-stable/themes/ then select via the theme picker.
@@ -20,7 +20,7 @@ function tomlEsc(s) {
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const themeName = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const themeName = `Chalii ${isDark ? "Dark" : "Light"}`;
 
     const colors = {
         red: c("state.error"),
@@ -240,5 +240,5 @@ function build(variant) {
 
 console.log("Building Lapce themes\u2026");
 for (const v of VARIANTS) {
-    writeOut(`ports/lapce/makinda-${v}.toml`, build(v));
+    writeOut(`ports/lapce/chalii-${v}.toml`, build(v));
 }

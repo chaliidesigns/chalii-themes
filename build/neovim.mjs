@@ -3,14 +3,14 @@
  * Neovim & Vim color scheme port.
  *
  * Output layout (standard Neovim plugin):
- *   ports/neovim/colors/makinda-light.lua        ← `:colorscheme makinda-light`
- *   ports/neovim/colors/makinda-dark.lua         ← `:colorscheme makinda-dark`
- *   ports/neovim/colors/makinda-light.vim        ← Vim fallback (cterm + gui)
- *   ports/neovim/colors/makinda-dark.vim         ← Vim fallback
- *   ports/neovim/lua/makinda/init.lua            ← setup({ variant = ... })
- *   ports/neovim/lua/makinda/palette.lua         ← generated palettes
- *   ports/neovim/lua/makinda/highlights.lua      ← highlight groups
- *   ports/neovim/lua/makinda/util.lua            ← apply helper
+ *   ports/neovim/colors/chalii-light.lua        ← `:colorscheme chalii-light`
+ *   ports/neovim/colors/chalii-dark.lua         ← `:colorscheme chalii-dark`
+ *   ports/neovim/colors/chalii-light.vim        ← Vim fallback (cterm + gui)
+ *   ports/neovim/colors/chalii-dark.vim         ← Vim fallback
+ *   ports/neovim/lua/chalii/init.lua            ← setup({ variant = ... })
+ *   ports/neovim/lua/chalii/palette.lua         ← generated palettes
+ *   ports/neovim/lua/chalii/highlights.lua      ← highlight groups
+ *   ports/neovim/lua/chalii/util.lua            ← apply helper
  *
  * Covers Neovim built-in groups, Treesitter, LSP semantic tokens, diagnostics,
  * gitsigns, telescope, nvim-tree / neo-tree, and lualine.
@@ -555,11 +555,11 @@ function M.load(variant)
     if vim.fn.exists("syntax_on") == 1 then vim.cmd("syntax reset") end
     vim.o.termguicolors = true
     vim.o.background = variant
-    vim.g.colors_name = "makinda-" .. variant
+    vim.g.colors_name = "chalii-" .. variant
 
-    local palette = require("makinda.palette")[variant]
+    local palette = require("chalii.palette")[variant]
     if not palette then
-        error("makinda: unknown variant: " .. tostring(variant))
+        error("chalii: unknown variant: " .. tostring(variant))
     end
 
     local p = vim.deepcopy(palette)
@@ -569,7 +569,7 @@ function M.load(variant)
         p.bg_panel = "NONE"
     end
 
-    local hi = require("makinda.highlights").get(p)
+    local hi = require("chalii.highlights").get(p)
 
     if not config.italic_comments then
         for _, name in ipairs({ "Comment", "@comment", "@comment.documentation", "SpecialComment" }) do
@@ -610,8 +610,8 @@ return M
 `;
 
 function colorsLua(variant) {
-    return `-- Entry point for ":colorscheme makinda-${variant}".
-require("makinda").load("${variant}")
+    return `-- Entry point for ":colorscheme chalii-${variant}".
+require("chalii").load("${variant}")
 `;
 }
 
@@ -671,13 +671,13 @@ function vimFallback(variant) {
     };
 
     const lines = [
-        `" Makinda ${isDark ? "Dark" : "Light"} \u2014 Vim fallback color scheme`,
+        `" Chalii ${isDark ? "Dark" : "Light"} \u2014 Vim fallback color scheme`,
         `" Generated from source/palette.json. Do not edit by hand.`,
         ``,
         `set background=${variant}`,
         `hi clear`,
         `if exists("syntax_on") | syntax reset | endif`,
-        `let g:colors_name = "makinda-${variant}"`,
+        `let g:colors_name = "chalii-${variant}"`,
         ``,
         G("Normal", { fg: roles.fg, bg: roles.bg }),
         G("NormalNC", { fg: roles.fg, bg: roles.bg }),
@@ -751,10 +751,10 @@ function vimFallback(variant) {
 // Write outputs
 // ---------------------------------------------------------------------------
 console.log("Building Neovim/Vim port\u2026");
-writeOut("ports/neovim/lua/makinda/palette.lua", buildPaletteLua());
-writeOut("ports/neovim/lua/makinda/highlights.lua", HIGHLIGHTS_LUA);
-writeOut("ports/neovim/lua/makinda/init.lua", INIT_LUA);
+writeOut("ports/neovim/lua/chalii/palette.lua", buildPaletteLua());
+writeOut("ports/neovim/lua/chalii/highlights.lua", HIGHLIGHTS_LUA);
+writeOut("ports/neovim/lua/chalii/init.lua", INIT_LUA);
 for (const v of VARIANTS) {
-    writeOut(`ports/neovim/colors/makinda-${v}.lua`, colorsLua(v));
-    writeOut(`ports/neovim/colors/makinda-${v}.vim`, vimFallback(v));
+    writeOut(`ports/neovim/colors/chalii-${v}.lua`, colorsLua(v));
+    writeOut(`ports/neovim/colors/chalii-${v}.vim`, vimFallback(v));
 }

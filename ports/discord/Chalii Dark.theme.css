@@ -1,0 +1,94 @@
+/**
+ * @name Chalii Dark
+ * @author Jackson Makinda
+ * @version 1.0.1
+ * @description Chalii Dark — premium dark Discord theme with warm orange accents.
+ * @source https://github.com/chaliidesigns/chalii-themes
+ */
+
+:root {
+    /* Brand */
+    --brand-experiment: #ff711a;
+    --brand-experiment-100: #ff9452;
+    --brand-experiment-160: #ff711a;
+    --brand-experiment-200: #ff711a;
+    --brand-experiment-260: #ff711a;
+    --brand-experiment-300: #ff711a;
+    --brand-experiment-360: #ff711a;
+    --brand-experiment-400: #ff711a;
+    --brand-experiment-460: #ff711a;
+    --brand-experiment-500: #ff711a;
+    --brand-experiment-560: #ff9452;
+    --brand-experiment-600: #ff9452;
+    --brand-experiment-660: #ff9452;
+    --brand-experiment-700: #ff9452;
+    --brand-experiment-760: #ff9452;
+    --brand-experiment-800: #ff9452;
+    --brand-experiment-860: #ff9452;
+    --brand-experiment-900: #ff9452;
+
+    /* Backgrounds */
+    --background-primary: #0e0e0f;
+    --background-secondary: #0e0e0f;
+    --background-secondary-alt: #18181b;
+    --background-tertiary: #0e0e0f;
+    --background-accent: #ff711a;
+    --background-floating: #27272a;
+    --background-mentioned: #ff711a22;
+    --background-mentioned-hover: #ff711a33;
+    --background-message-hover: #18181b;
+    --background-modifier-hover: #18181b;
+    --background-modifier-active: #27272a;
+    --background-modifier-selected: #27272a;
+    --background-modifier-accent: #27272a;
+
+    /* Text */
+    --text-normal: #e4e4e7;
+    --text-muted: #a1a1aa;
+    --text-link: #22d3ee;
+    --text-positive: #10b981;
+    --text-warning: #f59e0b;
+    --text-danger: #f43f5e;
+    --text-brand: #ff711a;
+    --interactive-normal: #d4d4d8;
+    --interactive-hover: #e4e4e7;
+    --interactive-active: #ff711a;
+    --interactive-muted: #52525b;
+    --header-primary: #e4e4e7;
+    --header-secondary: #d4d4d8;
+
+    /* Channels list */
+    --channels-default: #a1a1aa;
+    --channeltextarea-background: #18181b;
+
+    /* Status */
+    --status-positive-background: #10b981;
+    --status-positive-text: #0e0e0f;
+    --status-warning-background: #f59e0b;
+    --status-warning-text: #0e0e0f;
+    --status-danger-background: #f43f5e;
+    --status-danger-text: #0e0e0f;
+
+    /* Scrollbars */
+    --scrollbar-thin-thumb: #52525b;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #52525b;
+    --scrollbar-auto-track: #0e0e0f;
+    --scrollbar-auto-scrollbar-color-thumb: #52525b;
+    --scrollbar-auto-scrollbar-color-track: #0e0e0f;
+}
+
+.theme-dark {
+    --background-primary: #0e0e0f;
+    --background-secondary: #0e0e0f;
+    --background-tertiary: #0e0e0f;
+    --text-normal: #e4e4e7;
+}
+
+/* Code blocks */
+code,
+pre {
+    background: #18181b !important;
+    color: #2dd4bf !important;
+    border: 1px solid #27272a !important;
+}

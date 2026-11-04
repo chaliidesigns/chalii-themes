@@ -1,4 +1,4 @@
-# Makinda Themes — Lapce
+# Chalii Themes — Lapce
 
 ## Install
 
@@ -10,7 +10,7 @@ Drop both files into Lapce's themes folder:
 
 (or `~/Library/Application Support/lapce-stable/themes/` on macOS).
 
-Then **Settings → Theme → Makinda Light / Makinda Dark**.
+Then **Settings → Theme → Chalii Light / Chalii Dark**.
 
 ## Source of truth
 

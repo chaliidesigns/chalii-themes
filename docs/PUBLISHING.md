@@ -1,6 +1,6 @@
 # Publishing Runbook
 
-This is the per-release workflow for shipping **Makinda Themes** to every marketplace it lives on. Follow it top-to-bottom for any new version.
+This is the per-release workflow for shipping **Chalii Themes** to every marketplace it lives on. Follow it top-to-bottom for any new version.
 
 If this is your first time, read [§ One-time setup](#one-time-setup) first to create accounts, generate tokens, and seed first-time-only marketplace listings. Subsequent releases skip straight to [§ Per-release workflow](#per-release-workflow).
 
@@ -48,7 +48,7 @@ Generate each token once, then store in your password manager. **Never commit a 
 
 1. <https://dev.azure.com> → sign in with the Microsoft account that owns the `makindajack` Marketplace publisher.
 2. Avatar → **Personal access tokens** → **+ New Token**.
-3. Name `vsce-publish-makinda-themes`, **Organization: All accessible organizations**, expiration 1 year.
+3. Name `vsce-publish-chalii-themes`, **Organization: All accessible organizations**, expiration 1 year.
 4. **Custom defined** scopes → **Marketplace → Manage**.
 5. Create. Copy once.
 6. Verify the publisher exists at <https://marketplace.visualstudio.com/manage/publishers/makindajack>.
@@ -62,14 +62,14 @@ Generate each token once, then store in your password manager. **Never commit a 
 #### `JETBRAINS_PUBLISH_TOKEN` — JetBrains Marketplace
 
 1. <https://plugins.jetbrains.com> → sign in.
-2. **First time only:** upload `ports/jetbrains/build/distributions/makinda-themes-<version>.zip` at <https://plugins.jetbrains.com/plugin/add>. Category **UI → Themes**, license MIT. The plugin enters moderation; tokens work even before approval.
-3. <https://plugins.jetbrains.com/author/me/tokens> → **Generate Token** → name `gradle-publish-makinda-themes` → permanent → copy once.
+2. **First time only:** upload `ports/jetbrains/build/distributions/chalii-themes-<version>.zip` at <https://plugins.jetbrains.com/plugin/add>. Category **UI → Themes**, license MIT. The plugin enters moderation; tokens work even before approval.
+3. <https://plugins.jetbrains.com/author/me/tokens> → **Generate Token** → name `gradle-publish-chalii-themes` → permanent → copy once.
 
 ### First-time marketplace submissions (Tier 2)
 
 Submit each PR once. After it merges, future versions are picked up automatically by tagging a new GitHub release on the standalone repo.
 
-- **Sublime:** add an entry under `Makinda` in `repository/m.json` of `sublimehq/package_control_channel`. PR template: see [#9409](https://github.com/sublimehq/package_control_channel/pull/9409).
+- **Sublime:** add an entry under `Chalii` in `repository/m.json` of `sublimehq/package_control_channel`. PR template: see [#9409](https://github.com/sublimehq/package_control_channel/pull/9409).
 - **Obsidian:** append to `community-css-themes.json` of `obsidianmd/obsidian-releases`. PR template: see [#12586](https://github.com/obsidianmd/obsidian-releases/pull/12586). Repo must contain `manifest.json`, `theme.css`, and `screenshot.png` at root, with a tag matching the manifest version (no `v` prefix).
 - **Zed:** add as a git submodule in `extensions/<id>/` plus an entry in `extensions.toml` of `zed-industries/extensions`. Sign the [Zed CLA](https://zed.dev/cla) before opening the PR. PR template: see [#5924](https://github.com/zed-industries/extensions/pull/5924). Use a verified email on your GitHub account when committing — the CLA bot rejects unrecognized identities.
 
@@ -77,10 +77,10 @@ Submit each PR once. After it merges, future versions are picked up automaticall
 
 These are out of scope for the automated runbook below. Each is a manual web flow:
 
-- **BetterDiscord** — upload `ports/discord/Makinda Light.theme.css` and `Makinda Dark.theme.css` at <https://betterdiscord.app/developers>.
+- **BetterDiscord** — upload `ports/discord/Chalii Light.theme.css` and `Chalii Dark.theme.css` at <https://betterdiscord.app/developers>.
 - **Visual Studio (full)** — upload at <https://marketplace.visualstudio.com/manage/publishers/makindajack>. Note: full VS doesn't natively consume VS Code-style themes; ship `ports/visual-studio/*.vssettings` as a downloadable asset.
 - **Eclipse Marketplace** — listing form at <https://marketplace.eclipse.org/user/login>.
-- **Nova Extensions** — `cd ports/nova/Makinda.novaextension && nova extension publish` (requires Nova app + Panic ID).
+- **Nova Extensions** — `cd ports/nova/Chalii.novaextension && nova extension publish` (requires Nova app + Panic ID).
 
 ---
 
@@ -132,10 +132,10 @@ npm run screenshots   # only if the palette or themes changed
 
 ```bash
 npx --yes @vscode/vsce package
-# → makinda-themes-<version>.vsix
+# → chalii-themes-<version>.vsix
 
 cd ports/jetbrains && ./gradlew --no-daemon buildPlugin && cd -
-# → ports/jetbrains/build/distributions/makinda-themes-<version>.zip
+# → ports/jetbrains/build/distributions/chalii-themes-<version>.zip
 ```
 
 ### 6. Commit, tag, push, GitHub release
@@ -148,8 +148,8 @@ git push origin master
 git push origin v$NEW
 
 gh release create v$NEW \
-  makinda-themes-$NEW.vsix \
-  ports/jetbrains/build/distributions/makinda-themes-$NEW.zip \
+  chalii-themes-$NEW.vsix \
+  ports/jetbrains/build/distributions/chalii-themes-$NEW.zip \
   --title "v$NEW" \
   --notes-file <(awk "/^## \[$NEW\]/,/^## \[/{if(/^## \[/ && !/$NEW/) exit; print}" CHANGELOG.md)
 ```
@@ -161,12 +161,12 @@ These mirror specific files from `ports/<editor>/` into single-purpose repos tha
 ```bash
 NEW=1.0.3
 ROOT=$(pwd)
-WORK=/tmp/makinda-publish
+WORK=/tmp/chalii-publish
 mkdir -p $WORK && cd $WORK
 
 # --- Sublime ---
 git clone git@github.com:chaliidesigns/chalii-sublime.git
-cd makinda-sublime
+cd chalii-sublime
 rm -f *.sublime-color-scheme messages.json package.json README.md
 rm -rf messages
 cp -r $ROOT/ports/sublime/. .
@@ -180,7 +180,7 @@ cd ..
 
 # --- Obsidian ---
 git clone git@github.com:chaliidesigns/chalii-obsidian.git
-cd makinda-obsidian
+cd chalii-obsidian
 cp $ROOT/ports/obsidian/manifest.json $ROOT/ports/obsidian/theme.css .
 # Refresh screenshot if themes changed:
 cp $ROOT/images/dark-markdown.png screenshot.png
@@ -197,7 +197,7 @@ cd ..
 
 # --- Zed ---
 git clone git@github.com:chaliidesigns/chalii-zed.git
-cd makinda-zed
+cd chalii-zed
 rm -rf themes README.md extension.toml
 cp -r $ROOT/ports/zed/. .
 sed -i '' "s/version = \"[0-9.]*\"/version = \"$NEW\"/" extension.toml
@@ -222,7 +222,7 @@ export JETBRAINS_PUBLISH_TOKEN=...
 npx --yes @vscode/vsce publish --pat "$VSCE_PAT"
 
 # Open VSX
-npx --yes ovsx publish makinda-themes-$NEW.vsix -p "$OVSX_PAT"
+npx --yes ovsx publish chalii-themes-$NEW.vsix -p "$OVSX_PAT"
 
 # JetBrains Marketplace
 ( cd ports/jetbrains && ./gradlew --no-daemon publishPlugin )
@@ -237,24 +237,24 @@ Tier 2 marketplaces auto-pick-up new tags from the standalone repos **after** th
 - **Zed** — open a follow-up PR to `zed-industries/extensions` that bumps the submodule pointer and the `version` field in `extensions.toml`:
 
   ```bash
-  cd /tmp/makinda-publish
+  cd /tmp/chalii-publish
   rm -rf zed-extensions
   git clone --depth 1 git@github.com:chaliiwaui/extensions.git zed-extensions
   cd zed-extensions
   git remote add upstream https://github.com/zed-industries/extensions.git
   git fetch upstream main --depth 1
-  git checkout -B bump-makinda-$NEW upstream/main
-  cd extensions/makinda-themes
+  git checkout -B bump-chalii-$NEW upstream/main
+  cd extensions/chalii-themes
   git fetch && git checkout v$NEW
   cd ../..
-  sed -i '' "/^\[makinda-themes\]/,/^$/ s/version = \"[0-9.]*\"/version = \"$NEW\"/" extensions.toml
+  sed -i '' "/^\[chalii-themes\]/,/^$/ s/version = \"[0-9.]*\"/version = \"$NEW\"/" extensions.toml
   git -c user.email=22730819+makindajack@users.noreply.github.com \
       -c user.name=makindajack \
-      commit -am "Bump makinda-themes to $NEW"
-  git push -u origin bump-makinda-$NEW
+      commit -am "Bump chalii-themes to $NEW"
+  git push -u origin bump-chalii-$NEW
   gh pr create --repo zed-industries/extensions \
-    --base main --head makindajack:bump-makinda-$NEW \
-    --title "Bump makinda-themes to $NEW" \
+    --base main --head makindajack:bump-chalii-$NEW \
+    --title "Bump chalii-themes to $NEW" \
     --body "Bumps the submodule pointer and \`version\` in \`extensions.toml\`."
   ```
 
@@ -264,7 +264,7 @@ Reupload the relevant artifacts to the web portals listed in [§ One-time setup 
 
 ### 11. Post-release verification
 
-- [ ] <https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes> shows `$NEW` (cache can take ~5 min)
+- [ ] <https://marketplace.visualstudio.com/items?itemName=makindajack.chalii-themes> shows `$NEW` (cache can take ~5 min)
 - [ ] <https://open-vsx.org/extension/chaliidesigns/chalii-themes> shows `$NEW`
 - [ ] <https://plugins.jetbrains.com/plugin/me> JetBrains listing shows `$NEW` (after moderation)
 - [ ] [GitHub release](https://github.com/chaliidesigns/chalii-themes/releases) page shows `$NEW` with both artifacts attached
@@ -333,13 +333,13 @@ Package Control polls tags every few hours. Confirm your new tag exists at <http
 npx --yes @vscode/vsce ls
 
 # Show extension info on the Marketplace
-npx --yes @vscode/vsce show makindajack.makinda-themes
+npx --yes @vscode/vsce show makindajack.chalii-themes
 
 # Open every marketplace listing in a browser
-open https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes
+open https://marketplace.visualstudio.com/items?itemName=makindajack.chalii-themes
 open https://open-vsx.org/extension/chaliidesigns/chalii-themes
 open https://plugins.jetbrains.com/plugin/me
-open https://packagecontrol.io/packages/Makinda%20Themes
+open https://packagecontrol.io/packages/Chalii%20Themes
 open https://github.com/chaliidesigns/chalii-themes/releases
 ```
 

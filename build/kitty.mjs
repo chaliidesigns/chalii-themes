@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 /**
  * Generate Kitty .conf themes from source/palette.json.
- * Output: ports/kitty/makinda_<variant>.conf
+ * Output: ports/kitty/chalii_<variant>.conf
  *
- * Install: copy to `~/.config/kitty/` and add `include makinda_dark.conf` to kitty.conf.
+ * Install: copy to `~/.config/kitty/` and add `include chalii_dark.conf` to kitty.conf.
  */
 
 import { loadPalette, makeResolver, writeOut, VARIANTS } from "./lib/resolve.mjs";
@@ -13,7 +13,7 @@ const palette = loadPalette();
 function render(variant) {
     const c = makeResolver(palette, variant);
     const label = variant === "dark" ? "Dark" : "Light";
-    return `# Makinda ${label} \u2014 Kitty color scheme
+    return `# Chalii ${label} \u2014 Kitty color scheme
 # Generated from source/palette.json. Do not edit by hand.
 
 background        ${c("bg.editor")}
@@ -52,4 +52,4 @@ color15 ${c("ansi.brightWhite")}
 }
 
 console.log("Building Kitty themes\u2026");
-for (const v of VARIANTS) writeOut(`ports/kitty/makinda_${v}.conf`, render(v));
+for (const v of VARIANTS) writeOut(`ports/kitty/chalii_${v}.conf`, render(v));

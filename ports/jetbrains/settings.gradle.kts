@@ -1,1 +1,1 @@
-rootProject.name = "makinda-themes"
+rootProject.name = "chalii-themes"

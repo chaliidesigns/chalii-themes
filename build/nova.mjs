@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generate a Nova theme extension from source/palette.json.
- * Output: ports/nova/Makinda.novaextension/Themes/{Makinda Light.json,Makinda Dark.json}
+ * Output: ports/nova/Chalii.novaextension/Themes/{Chalii Light.json,Chalii Dark.json}
  * plus extension.json.
  *
  * Nova themes are JSON; install by opening the .novaextension folder in Nova
@@ -16,7 +16,7 @@ function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
     return {
-        name: `Makinda ${isDark ? "Dark" : "Light"}`,
+        name: `Chalii ${isDark ? "Dark" : "Light"}`,
         kind: isDark ? "dark" : "light",
         meta: {
             "interface-style": isDark ? "dark" : "light",
@@ -121,28 +121,28 @@ function build(variant) {
 }
 
 const extension = {
-    identifier: "com.makindajack.makinda",
-    name: "Makinda Themes",
+    identifier: "com.makindajack.chalii",
+    name: "Chalii Themes",
     organization: "Jackson Makinda",
     description: "Premium Light + Dark themes with warm orange accents.",
     version: palette.version || "1.0.1",
     categories: ["themes"],
     main: null,
     themes: [
-        { path: "Themes/Makinda Light.json" },
-        { path: "Themes/Makinda Dark.json" },
+        { path: "Themes/Chalii Light.json" },
+        { path: "Themes/Chalii Dark.json" },
     ],
 };
 
 console.log("Building Nova theme extension\u2026");
 writeOut(
-    "ports/nova/Makinda.novaextension/extension.json",
+    "ports/nova/Chalii.novaextension/extension.json",
     JSON.stringify(extension, null, 2) + "\n",
 );
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
     writeOut(
-        `ports/nova/Makinda.novaextension/Themes/Makinda ${label}.json`,
+        `ports/nova/Chalii.novaextension/Themes/Chalii ${label}.json`,
         JSON.stringify(build(v), null, 2) + "\n",
     );
 }

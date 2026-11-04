@@ -2,8 +2,8 @@
 /**
  * Generate a BetterDiscord theme (CSS) from source/palette.json.
  * Output:
- *   ports/discord/Makinda Light.theme.css
- *   ports/discord/Makinda Dark.theme.css
+ *   ports/discord/Chalii Light.theme.css
+ *   ports/discord/Chalii Dark.theme.css
  *
  * Drop into BetterDiscord's themes folder:
  *   %APPDATA%/BetterDiscord/themes/        (Windows)
@@ -20,10 +20,10 @@ const palette = loadPalette();
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const label = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const label = `Chalii ${isDark ? "Dark" : "Light"}`;
 
     return `/**
- * @name Makinda ${isDark ? "Dark" : "Light"}
+ * @name Chalii ${isDark ? "Dark" : "Light"}
  * @author Jackson Makinda
  * @version ${palette.version || "1.0.1"}
  * @description ${label} \u2014 premium ${variant} Discord theme with warm orange accents.
@@ -122,5 +122,5 @@ pre {
 console.log("Building Discord (BetterDiscord) themes\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
-    writeOut(`ports/discord/Makinda ${label}.theme.css`, build(v));
+    writeOut(`ports/discord/Chalii ${label}.theme.css`, build(v));
 }

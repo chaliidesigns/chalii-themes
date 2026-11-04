@@ -2,8 +2,8 @@
 /**
  * Generate Emacs theme files from source/palette.json.
  * Output:
- *   ports/emacs/makinda-light-theme.el
- *   ports/emacs/makinda-dark-theme.el
+ *   ports/emacs/chalii-light-theme.el
+ *   ports/emacs/chalii-dark-theme.el
  *
  * Each file defines a single deftheme via `deftheme` + `custom-theme-set-faces`,
  * covering core Emacs faces, font-lock, line numbers, mode-line, region,
@@ -18,8 +18,8 @@ const stripAlpha = (h) => "#" + h.replace("#", "").slice(0, 6).toLowerCase();
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const themeName = `makinda-${variant}`;
-    const label = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const themeName = `chalii-${variant}`;
+    const label = `Chalii ${isDark ? "Dark" : "Light"}`;
 
     const p = {
         bg: stripAlpha(c("bg.editor")),
@@ -245,5 +245,5 @@ ${faces.join("\n")})
 
 console.log("Building Emacs themes\u2026");
 for (const v of VARIANTS) {
-    writeOut(`ports/emacs/makinda-${v}-theme.el`, build(v));
+    writeOut(`ports/emacs/chalii-${v}-theme.el`, build(v));
 }

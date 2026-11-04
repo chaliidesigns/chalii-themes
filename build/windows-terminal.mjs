@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
  * Generate Windows Terminal scheme JSON snippets from source/palette.json.
- * Output: ports/windows-terminal/makinda_<variant>.json
+ * Output: ports/windows-terminal/chalii_<variant>.json
  *
  * Install: copy the object into `schemes` array in Windows Terminal `settings.json`,
- * then set `colorScheme` on a profile to "Makinda Light" or "Makinda Dark".
+ * then set `colorScheme` on a profile to "Chalii Light" or "Chalii Dark".
  */
 
 import { loadPalette, makeResolver, writeOut, VARIANTS } from "./lib/resolve.mjs";
@@ -14,7 +14,7 @@ const palette = loadPalette();
 function render(variant) {
     const c = makeResolver(palette, variant);
     const scheme = {
-        name: `Makinda ${variant === "dark" ? "Dark" : "Light"}`,
+        name: `Chalii ${variant === "dark" ? "Dark" : "Light"}`,
         background: c("bg.editor"),
         foreground: c("fg.default"),
         cursorColor: c("brand.primary"),
@@ -40,4 +40,4 @@ function render(variant) {
 }
 
 console.log("Building Windows Terminal schemes\u2026");
-for (const v of VARIANTS) writeOut(`ports/windows-terminal/makinda_${v}.json`, render(v));
+for (const v of VARIANTS) writeOut(`ports/windows-terminal/chalii_${v}.json`, render(v));

@@ -1,19 +1,19 @@
-Makinda Themes
+Chalii Themes
 ==============
 
-Thanks for installing Makinda Themes — a premium pair of light and dark color
+Thanks for installing Chalii Themes — a premium pair of light and dark color
 schemes with warm orange accents and excellent readability.
 
 Activate a scheme:
 
     Preferences > Select Color Scheme...
-        - Makinda Light
-        - Makinda Dark
+        - Chalii Light
+        - Chalii Dark
 
 Or set in Preferences.sublime-settings:
 
     {
-        "color_scheme": "Packages/Makinda Themes/Makinda Dark.sublime-color-scheme"
+        "color_scheme": "Packages/Chalii Themes/Chalii Dark.sublime-color-scheme"
     }
 
 Source: https://github.com/chaliidesigns/chalii-themes

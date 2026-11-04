@@ -1,6 +1,6 @@
-# Contributing to Makinda Themes
+# Contributing to Chalii Themes
 
-Thank you for your interest in contributing to Makinda Themes! This document provides guidelines for contributing to this project.
+Thank you for your interest in contributing to Chalii Themes! This document provides guidelines for contributing to this project.
 
 ## Code of Conduct
 
@@ -46,8 +46,8 @@ See [DEVELOPMENT.md](DEVELOPMENT.md) for detailed setup instructions.
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/makinda-themes.git
-cd makinda-themes
+git clone https://github.com/YOUR_USERNAME/chalii-themes.git
+cd chalii-themes
 
 # Open in VS Code
 code .

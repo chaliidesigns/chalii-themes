@@ -30,25 +30,25 @@ jobs:
         run: npm run build
 
       - name: Package VSIX
-        run: npx --yes @vscode/vsce package --no-dependencies --out makinda-themes.vsix
+        run: npx --yes @vscode/vsce package --no-dependencies --out chalii-themes.vsix
 
       - name: Publish to VS Code Marketplace
         if: ${{ env.VSCE_PAT != '' }}
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
-        run: npx --yes @vscode/vsce publish --no-dependencies --packagePath makinda-themes.vsix
+        run: npx --yes @vscode/vsce publish --no-dependencies --packagePath chalii-themes.vsix
 
       - name: Publish to Open VSX
         if: ${{ env.OVSX_PAT != '' }}
         env:
           OVSX_PAT: ${{ secrets.OVSX_PAT }}
-        run: npx --yes ovsx publish makinda-themes.vsix -p "$OVSX_PAT"
+        run: npx --yes ovsx publish chalii-themes.vsix -p "$OVSX_PAT"
 
       - name: Bundle ports archive
         run: |
           mkdir -p dist
-          tar -czf dist/makinda-themes-ports-${GITHUB_REF_NAME}.tar.gz ports/
-          cp makinda-themes.vsix "dist/makinda-themes-${GITHUB_REF_NAME}.vsix"
+          tar -czf dist/chalii-themes-ports-${GITHUB_REF_NAME}.tar.gz ports/
+          cp chalii-themes.vsix "dist/chalii-themes-${GITHUB_REF_NAME}.vsix"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2

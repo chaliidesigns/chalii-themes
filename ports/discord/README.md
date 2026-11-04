@@ -1,4 +1,4 @@
-# Makinda Themes — Discord (BetterDiscord)
+# Chalii Themes — Discord (BetterDiscord)
 
 CSS themes for [BetterDiscord](https://betterdiscord.app/).
 

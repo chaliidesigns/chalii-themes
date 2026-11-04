@@ -1,9 +1,14 @@
 # Changelog
 
-All notable changes to the "Makinda Themes" extension will be documented in this file.
+All notable changes to the "Chalii Themes" extension (formerly Makinda Themes) will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Changed
+- Rebranded from **Makinda Themes** to **Chalii Themes**: display names, theme/scheme names, file names and package identifiers now use "Chalii". Entries below this one keep the historical names.
 
 ## [1.1.0] - 2026-05-06
 

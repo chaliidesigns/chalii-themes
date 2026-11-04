@@ -12,8 +12,8 @@
  * Color values are encoded as space-separated "r g b a" with 0..1 floats.
  *
  * Output:
- *   ports/xcode/Makinda Light.xccolortheme
- *   ports/xcode/Makinda Dark.xccolortheme
+ *   ports/xcode/Chalii Light.xccolortheme
+ *   ports/xcode/Chalii Dark.xccolortheme
  *   ports/xcode/install.sh
  *   ports/xcode/README.md  (kept hand-edited; not regenerated)
  */
@@ -106,7 +106,7 @@ function buildTheme(variant) {
 
     return `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!-- Makinda ${isDark ? "Dark" : "Light"} \u2014 Xcode color theme. Generated from source/palette.json. -->
+<!-- Chalii ${isDark ? "Dark" : "Light"} \u2014 Xcode color theme. Generated from source/palette.json. -->
 <plist version="1.0">
 <dict>
     <key>DVTConsoleDebuggerInputTextColor</key>
@@ -209,7 +209,7 @@ ${syntaxFontsLines.join("\n")}
 }
 
 const INSTALL_SH = `#!/usr/bin/env bash
-# Install Makinda Themes for Xcode.
+# Install Chalii Themes for Xcode.
 #
 # Copies both .xccolortheme files into Xcode's user themes directory:
 #   ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
@@ -224,7 +224,7 @@ SRC="$(cd "$(dirname "\${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p "$DEST"
 
-for f in "Makinda Light.xccolortheme" "Makinda Dark.xccolortheme"; do
+for f in "Chalii Light.xccolortheme" "Chalii Dark.xccolortheme"; do
     if [[ ! -f "$SRC/$f" ]]; then
         echo "missing: $SRC/$f" >&2
         exit 1
@@ -234,12 +234,12 @@ for f in "Makinda Light.xccolortheme" "Makinda Dark.xccolortheme"; do
 done
 
 echo
-echo "Restart Xcode, then choose: Xcode \u2192 Settings \u2192 Themes \u2192 Makinda Light / Dark."
+echo "Restart Xcode, then choose: Xcode \u2192 Settings \u2192 Themes \u2192 Chalii Light / Dark."
 `;
 
 console.log("Building Xcode themes\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
-    writeOut(`ports/xcode/Makinda ${label}.xccolortheme`, buildTheme(v));
+    writeOut(`ports/xcode/Chalii ${label}.xccolortheme`, buildTheme(v));
 }
 writeOut("ports/xcode/install.sh", INSTALL_SH);

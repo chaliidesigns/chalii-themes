@@ -2,8 +2,8 @@
 /**
  * Generate TextMate `.tmTheme` files (XML plist) from source/palette.json.
  * Output:
- *   ports/textmate/Makinda Light.tmTheme
- *   ports/textmate/Makinda Dark.tmTheme
+ *   ports/textmate/Chalii Light.tmTheme
+ *   ports/textmate/Chalii Dark.tmTheme
  *
  * Schema: https://macromates.com/manual/en/themes
  * Notes: TextMate uses `#RRGGBB` and a single dictionary per scope rule.
@@ -50,7 +50,7 @@ function rule(name, scope, settings) {
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const label = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const label = `Chalii ${isDark ? "Dark" : "Light"}`;
 
     const globals = {
         background: stripAlpha(c("bg.editor")),
@@ -123,7 +123,7 @@ function build(variant) {
     <key>colorSpaceName</key>
     <string>sRGB</string>
     <key>semanticClass</key>
-    <string>theme.${isDark ? "dark" : "light"}.makinda</string>
+    <string>theme.${isDark ? "dark" : "light"}.chalii</string>
     <key>settings</key>
     <array>
 ${globalRule.join("\n").split("\n").map((l) => "        " + l).join("\n").trimEnd()}
@@ -137,5 +137,5 @@ ${rules.map((r) => rule(...r).split("\n").map((l) => "        " + l).join("\n").
 console.log("Building TextMate themes\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
-    writeOut(`ports/textmate/Makinda ${label}.tmTheme`, build(v));
+    writeOut(`ports/textmate/Chalii ${label}.tmTheme`, build(v));
 }

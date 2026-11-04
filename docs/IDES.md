@@ -6,7 +6,7 @@ Status legend: ✅ shipping · 🟡 in progress · ⏳ planned · 💤 backlog
 
 | Editor                   | Status | Format                         | Notes                                                                                                                |
 | ------------------------ | :----: | ------------------------------ | -------------------------------------------------------------------------------------------------------------------- |
-| **VS Code**              |   ✅   | `*.color-theme.json`           | Source port. Published as `makindajack.makinda-themes`.                                                              |
+| **VS Code**              |   ✅   | `*.color-theme.json`           | Source port. Published as `makindajack.chalii-themes`.                                                              |
 | **Cursor**               |   ✅   | (VS Code theme)                | Drop-in compatible — uses the VS Code extension as-is.                                                               |
 | **Windsurf**             |   ✅   | (VS Code theme)                | Drop-in compatible.                                                                                                  |
 | **VSCodium / Open VSX**  |   ✅   | `*.color-theme.json`           | Same `.vsix`; auto-published via release workflow.                                                                   |
@@ -18,7 +18,7 @@ Status legend: ✅ shipping · 🟡 in progress · ⏳ planned · 💤 backlog
 | **Visual Studio (full)** |   ✅   | `*.vssettings`                 | Generated XML; import via Tools → Import and Export Settings.                                                        |
 | **Helix**                |   ✅   | `*.toml`                       | Drop into `~/.config/helix/themes/`.                                                                                 |
 | **Lapce**                |   ✅   | `*.toml`                       | Generated; install via Lapce settings.                                                                               |
-| **Emacs**                |   ✅   | `makinda-*-theme.el`           | `deftheme`-based; load with `M-x load-theme`.                                                                        |
+| **Emacs**                |   ✅   | `chalii-*-theme.el`           | `deftheme`-based; load with `M-x load-theme`.                                                                        |
 | **Nova** (Panic)         |   ✅   | `*.novaextension`              | macOS only.                                                                                                          |
 | **TextMate**             |   ✅   | `*.tmTheme` (plist)            | Doubles as input for older Sublime/Atom.                                                                             |
 | **BBEdit**               |   ✅   | `*.bbcolors` (plist)           | macOS only.                                                                                                          |

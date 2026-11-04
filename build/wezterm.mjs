@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
  * Generate WezTerm Lua themes from source/palette.json.
- * Output: ports/wezterm/makinda.lua  (returns a table indexed by scheme name)
+ * Output: ports/wezterm/chalii.lua  (returns a table indexed by scheme name)
  *
  * Install: copy/symlink into `~/.config/wezterm/colors/` or use directly:
  *
  *   local wez = require('wezterm')
- *   local schemes = require('makinda')
- *   return { color_schemes = schemes, color_scheme = 'Makinda Dark' }
+ *   local schemes = require('chalii')
+ *   return { color_schemes = schemes, color_scheme = 'Chalii Dark' }
  */
 
 import { loadPalette, makeResolver, writeOut, VARIANTS } from "./lib/resolve.mjs";
@@ -27,7 +27,7 @@ function schemeBlock(variant) {
         .map((k) => `"${stripAlpha(c(`ansi.bright${k[0].toUpperCase() + k.slice(1)}`))}"`)
         .join(", ");
 
-    return `    ["Makinda ${label}"] = {
+    return `    ["Chalii ${label}"] = {
         foreground = "${stripAlpha(c("fg.default"))}",
         background = "${stripAlpha(c("bg.editor"))}",
         cursor_bg = "${stripAlpha(c("brand.primary"))}",
@@ -68,15 +68,15 @@ function schemeBlock(variant) {
     },`;
 }
 
-const out = `-- Makinda Themes \u2014 WezTerm color schemes.
+const out = `-- Chalii Themes \u2014 WezTerm color schemes.
 -- Generated from source/palette.json. Do not edit by hand.
 --
 -- Usage:
 --   local wez = require('wezterm')
---   local makinda = require('makinda')   -- when this file is on package.path
+--   local chalii = require('chalii')   -- when this file is on package.path
 --   return {
---       color_schemes = makinda,
---       color_scheme = 'Makinda Dark',
+--       color_schemes = chalii,
+--       color_scheme = 'Chalii Dark',
 --   }
 return {
 ${VARIANTS.map(schemeBlock).join("\n")}
@@ -84,4 +84,4 @@ ${VARIANTS.map(schemeBlock).join("\n")}
 `;
 
 console.log("Building WezTerm theme\u2026");
-writeOut("ports/wezterm/makinda.lua", out);
+writeOut("ports/wezterm/chalii.lua", out);

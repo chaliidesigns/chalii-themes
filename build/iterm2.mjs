@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generate iTerm2 .itermcolors (plist) themes from source/palette.json.
- * Output: ports/iterm2/Makinda <Variant>.itermcolors
+ * Output: ports/iterm2/Chalii <Variant>.itermcolors
  *
  * Install: double-click the file or import in iTerm2 \u2192 Preferences \u2192 Profiles \u2192 Colors \u2192 Color Presets.
  */
@@ -80,5 +80,5 @@ ${slots.map(([k, v]) => colorEntry(k, v)).join("\n")}
 console.log("Building iTerm2 themes\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
-    writeOut(`ports/iterm2/Makinda ${label}.itermcolors`, render(v));
+    writeOut(`ports/iterm2/Chalii ${label}.itermcolors`, render(v));
 }

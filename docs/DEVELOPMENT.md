@@ -1,6 +1,6 @@
 # Development Guide
 
-This guide covers how to develop and test the Makinda Themes extension locally.
+This guide covers how to develop and test the Chalii Themes extension locally.
 
 ## Prerequisites
 
@@ -11,10 +11,10 @@ This guide covers how to develop and test the Makinda Themes extension locally.
 ## Project Structure
 
 ```
-makinda-themes/
+chalii-themes/
 ├── themes/
-│   ├── Makinda Light-color-theme.json  # Light theme definition
-│   └── Makinda Dark-color-theme.json   # Dark theme definition
+│   ├── Chalii Light-color-theme.json  # Light theme definition
+│   └── Chalii Dark-color-theme.json   # Dark theme definition
 ├── images/
 │   ├── icon.png                         # Extension icon
 │   ├── icon-light.png                   # Light variant icon
@@ -35,7 +35,7 @@ makinda-themes/
 
 ```bash
 git clone https://github.com/chaliidesigns/chalii-themes.git
-cd makinda-themes
+cd chalii-themes
 ```
 
 ### Open in VS Code
@@ -52,12 +52,12 @@ code .
 
 ## Theme File Structure
 
-The theme is defined in `themes/Makinda Light-color-theme.json`:
+The theme is defined in `themes/Chalii Light-color-theme.json`:
 
 ```json
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Makinda Light",
+  "name": "Chalii Light",
   "type": "light",
   "colors": {
     // UI colors (editor, sidebar, tabs, etc.)
@@ -113,7 +113,7 @@ Enhanced token colors for supported languages:
 
 ### Editing Colors
 
-1. Open `themes/Makinda Light-color-theme.json`
+1. Open `themes/Chalii Light-color-theme.json`
 2. Make your changes
 3. Save the file
 4. In the Extension Development Host:
@@ -178,12 +178,12 @@ npm install -g @vscode/vsce
 vsce package
 ```
 
-Creates `makinda-themes-X.X.X.vsix`
+Creates `chalii-themes-X.X.X.vsix`
 
 ### Test Package
 
 ```bash
-code --install-extension makinda-themes-1.0.0.vsix
+code --install-extension chalii-themes-1.0.0.vsix
 ```
 
 ## Useful Resources
@@ -212,7 +212,7 @@ code --install-extension makinda-themes-1.0.0.vsix
 Run in terminal:
 
 ```bash
-cat "themes/Makinda Light-color-theme.json" | python3 -m json.tool > /dev/null
+cat "themes/Chalii Light-color-theme.json" | python3 -m json.tool > /dev/null
 ```
 
 If there's no output, the JSON is valid.

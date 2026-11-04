@@ -12,7 +12,7 @@
  *
  * Output:
  *   ports/zed/extension.toml
- *   ports/zed/themes/makinda.json
+ *   ports/zed/themes/chalii.json
  */
 
 import { loadPalette, makeResolver, writeOut, VARIANTS } from "./lib/resolve.mjs";
@@ -39,7 +39,7 @@ function syntaxEntry(color, opts = {}) {
 function buildVariant(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const label = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const label = `Chalii ${isDark ? "Dark" : "Light"}`;
 
     const success = c("state.success");
     const warning = c("state.warning");
@@ -261,7 +261,7 @@ function buildVariant(variant) {
 function buildFamily() {
     return {
         $schema: "https://zed.dev/schema/themes/v0.2.0.json",
-        name: "Makinda Themes",
+        name: "Chalii Themes",
         author: "Jackson Makinda",
         themes: VARIANTS.map(buildVariant),
     };
@@ -270,8 +270,8 @@ function buildFamily() {
 function buildExtensionToml() {
     // Minimal Zed extension manifest. `id` matches the directory; `themes`
     // is auto-discovered from the themes/ folder but we declare it for clarity.
-    return `id = "makinda-themes"
-name = "Makinda Themes"
+    return `id = "chalii-themes"
+name = "Chalii Themes"
 description = "Premium light and dark themes for Zed with warm orange accents and excellent readability."
 version = "1.0.0"
 schema_version = 1
@@ -282,4 +282,4 @@ repository = "https://github.com/chaliidesigns/chalii-themes"
 
 console.log("Building Zed theme\u2026");
 writeOut("ports/zed/extension.toml", buildExtensionToml());
-writeOut("ports/zed/themes/makinda.json", JSON.stringify(buildFamily(), null, 2) + "\n");
+writeOut("ports/zed/themes/chalii.json", JSON.stringify(buildFamily(), null, 2) + "\n");

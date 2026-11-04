@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generate Alacritty TOML themes from source/palette.json.
- * Output: ports/alacritty/makinda_<variant>.toml
+ * Output: ports/alacritty/chalii_<variant>.toml
  *
  * Drop in: `~/.config/alacritty/themes/` then `import = ["..."]` in alacritty.toml.
  */
@@ -12,7 +12,7 @@ const palette = loadPalette();
 
 function render(variant) {
     const c = makeResolver(palette, variant);
-    return `# Makinda ${variant === "dark" ? "Dark" : "Light"} \u2014 Alacritty theme
+    return `# Chalii ${variant === "dark" ? "Dark" : "Light"} \u2014 Alacritty theme
 # Generated from source/palette.json. Do not edit by hand.
 
 [colors.primary]
@@ -50,4 +50,4 @@ white   = "${c("ansi.brightWhite")}"
 }
 
 console.log("Building Alacritty themes\u2026");
-for (const v of VARIANTS) writeOut(`ports/alacritty/makinda_${v}.toml`, render(v));
+for (const v of VARIANTS) writeOut(`ports/alacritty/chalii_${v}.toml`, render(v));

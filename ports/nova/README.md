@@ -1,4 +1,4 @@
-# Makinda Themes — Nova
+# Chalii Themes — Nova
 
 A Nova extension bundling both Light and Dark themes.
 
@@ -6,7 +6,7 @@ A Nova extension bundling both Light and Dark themes.
 
 1. Open the **Extensions** menu in Nova.
 2. **Develop** → **Activate Project as Extension** and select
-   `Makinda.novaextension/`.
+   `Chalii.novaextension/`.
 
 For distribution, package and submit to the Nova Extension Library.
 

@@ -1,12 +1,12 @@
-# Makinda Themes — Obsidian
+# Chalii Themes — Obsidian
 
 A single CSS theme that auto-switches with Obsidian's appearance setting.
 
 ## Install (manual)
 
-1. Create the directory `<vault>/.obsidian/themes/Makinda/`.
+1. Create the directory `<vault>/.obsidian/themes/Chalii/`.
 2. Copy `theme.css` and `manifest.json` into it.
-3. **Settings → Appearance → Themes → Makinda**.
+3. **Settings → Appearance → Themes → Chalii**.
 
 ## Source of truth
 

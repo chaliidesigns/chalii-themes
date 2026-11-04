@@ -1,0 +1,94 @@
+/**
+ * @name Chalii Light
+ * @author Jackson Makinda
+ * @version 1.0.1
+ * @description Chalii Light — premium light Discord theme with warm orange accents.
+ * @source https://github.com/chaliidesigns/chalii-themes
+ */
+
+:root {
+    /* Brand */
+    --brand-experiment: #e65800;
+    --brand-experiment-100: #b34400;
+    --brand-experiment-160: #e65800;
+    --brand-experiment-200: #e65800;
+    --brand-experiment-260: #e65800;
+    --brand-experiment-300: #e65800;
+    --brand-experiment-360: #e65800;
+    --brand-experiment-400: #e65800;
+    --brand-experiment-460: #e65800;
+    --brand-experiment-500: #e65800;
+    --brand-experiment-560: #b34400;
+    --brand-experiment-600: #b34400;
+    --brand-experiment-660: #b34400;
+    --brand-experiment-700: #b34400;
+    --brand-experiment-760: #b34400;
+    --brand-experiment-800: #b34400;
+    --brand-experiment-860: #b34400;
+    --brand-experiment-900: #b34400;
+
+    /* Backgrounds */
+    --background-primary: #ffffff;
+    --background-secondary: #fafafa;
+    --background-secondary-alt: #fafafa;
+    --background-tertiary: #ffffff;
+    --background-accent: #e65800;
+    --background-floating: #ffffff;
+    --background-mentioned: #e6580022;
+    --background-mentioned-hover: #e6580033;
+    --background-message-hover: #fafafa;
+    --background-modifier-hover: #fafafa;
+    --background-modifier-active: #f4f4f5;
+    --background-modifier-selected: #f4f4f5;
+    --background-modifier-accent: #e4e4e7;
+
+    /* Text */
+    --text-normal: #27272a;
+    --text-muted: #52525b;
+    --text-link: #0891b2;
+    --text-positive: #10b981;
+    --text-warning: #f59e0b;
+    --text-danger: #f43f5e;
+    --text-brand: #e65800;
+    --interactive-normal: #3f3f46;
+    --interactive-hover: #27272a;
+    --interactive-active: #e65800;
+    --interactive-muted: #a1a1aa;
+    --header-primary: #27272a;
+    --header-secondary: #3f3f46;
+
+    /* Channels list */
+    --channels-default: #52525b;
+    --channeltextarea-background: #fafafa;
+
+    /* Status */
+    --status-positive-background: #10b981;
+    --status-positive-text: #ffffff;
+    --status-warning-background: #f59e0b;
+    --status-warning-text: #ffffff;
+    --status-danger-background: #f43f5e;
+    --status-danger-text: #ffffff;
+
+    /* Scrollbars */
+    --scrollbar-thin-thumb: #d4d4d8;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #d4d4d8;
+    --scrollbar-auto-track: #ffffff;
+    --scrollbar-auto-scrollbar-color-thumb: #d4d4d8;
+    --scrollbar-auto-scrollbar-color-track: #ffffff;
+}
+
+.theme-light {
+    --background-primary: #ffffff;
+    --background-secondary: #fafafa;
+    --background-tertiary: #ffffff;
+    --text-normal: #27272a;
+}
+
+/* Code blocks */
+code,
+pre {
+    background: #fafafa !important;
+    color: #0d7377 !important;
+    border: 1px solid #e4e4e7 !important;
+}

@@ -1,12 +1,12 @@
-# Makinda Themes — Xcode
+# Chalii Themes — Xcode
 
 Premium light and dark color themes for Xcode with warm orange accents and
 excellent readability.
 
 ## Variants
 
-- **Makinda Light**
-- **Makinda Dark**
+- **Chalii Light**
+- **Chalii Dark**
 
 ## Install
 
@@ -21,13 +21,13 @@ Or copy manually into Xcode's user themes folder:
 
 ```bash
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
-cp "Makinda Light.xccolortheme" "Makinda Dark.xccolortheme" \
+cp "Chalii Light.xccolortheme" "Chalii Dark.xccolortheme" \
    ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 ```
 
 Then restart Xcode and select the theme:
 
-**Xcode → Settings → Themes → Makinda Light** (or **Makinda Dark**)
+**Xcode → Settings → Themes → Chalii Light** (or **Chalii Dark**)
 
 ## Fonts
 

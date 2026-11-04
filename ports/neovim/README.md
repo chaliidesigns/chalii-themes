@@ -1,12 +1,12 @@
-# Makinda Themes — Neovim & Vim
+# Chalii Themes — Neovim & Vim
 
 Premium light and dark colorschemes for Neovim (≥0.9 recommended for full
 Treesitter / LSP semantic token support) and Vim (8+ with `termguicolors`).
 
 ## Variants
 
-- `makinda-light`
-- `makinda-dark`
+- `chalii-light`
+- `chalii-dark`
 
 ## Install (Neovim)
 
@@ -18,14 +18,14 @@ Treesitter / LSP semantic token support) and Vim (8+ with `termguicolors`).
   -- The Neovim plugin lives under ports/neovim/ in this monorepo.
   -- If you install from the dedicated mirror once published, drop the `dir`.
   config = function()
-    require("makinda").setup({
+    require("chalii").setup({
       variant = "auto",        -- "light" | "dark" | "auto" (follows &background)
       transparent = false,
       italic_comments = true,
       italic_keywords = false,
       terminal_colors = true,
     })
-    vim.cmd.colorscheme("makinda-dark")
+    vim.cmd.colorscheme("chalii-dark")
   end,
 }
 ```
@@ -36,8 +36,8 @@ Treesitter / LSP semantic token support) and Vim (8+ with `termguicolors`).
 use({
   "chaliidesigns/chalii-themes",
   config = function()
-    require("makinda").setup({})
-    vim.cmd.colorscheme("makinda-dark")
+    require("chalii").setup({})
+    vim.cmd.colorscheme("chalii-dark")
   end,
 })
 ```
@@ -48,8 +48,8 @@ use({
 Plug 'chaliidesigns/chalii-themes'
 
 " then in your init:
-lua require("makinda").setup({})
-colorscheme makinda-dark
+lua require("chalii").setup({})
+colorscheme chalii-dark
 ```
 
 ## Install (Vim)
@@ -58,9 +58,9 @@ Vim doesn't load Lua — use the `.vim` fallback colorschemes instead:
 
 ```vim
 set termguicolors
-colorscheme makinda-dark
+colorscheme chalii-dark
 " or
-colorscheme makinda-light
+colorscheme chalii-light
 ```
 
 The `.vim` files include 256-color (cterm) approximations for terminals
@@ -69,7 +69,7 @@ without true-color support.
 ## Configuration
 
 ```lua
-require("makinda").setup({
+require("chalii").setup({
   variant = "auto",          -- light | dark | auto
   transparent = false,        -- transparent editor / sidebar / panel
   italic_comments = true,

@@ -1,4 +1,4 @@
-# Makinda Themes — BBEdit
+# Chalii Themes — BBEdit
 
 `.bbcolors` plist files for BBEdit.
 

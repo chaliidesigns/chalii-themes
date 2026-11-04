@@ -1,4 +1,4 @@
-# Makinda Themes — Eclipse
+# Chalii Themes — Eclipse
 
 Eclipse Preference Files (`.epf`) covering editor surface, JDT (Java) syntax,
 XML, and console.
@@ -7,7 +7,7 @@ XML, and console.
 
 1. **Window → Preferences → Import…**
 2. Select **General → Preferences**.
-3. Pick `makinda-light.epf` or `makinda-dark.epf`.
+3. Pick `chalii-light.epf` or `chalii-dark.epf`.
 
 > Note: Eclipse's overall UI chrome (workbench dark mode) is controlled
 > separately under **Appearance → Theme**. Pair this with **Dark** for the

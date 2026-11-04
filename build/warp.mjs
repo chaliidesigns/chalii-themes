@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Generate Warp YAML themes from source/palette.json.
- * Output: ports/warp/makinda_<variant>.yaml
+ * Output: ports/warp/chalii_<variant>.yaml
  *
  * Install: copy to `~/.warp/themes/` (macOS) and pick from Warp's theme picker.
  */
@@ -13,9 +13,9 @@ const palette = loadPalette();
 function render(variant) {
     const c = makeResolver(palette, variant);
     const label = variant === "dark" ? "Dark" : "Light";
-    return `# Makinda ${label} \u2014 Warp theme
+    return `# Chalii ${label} \u2014 Warp theme
 # Generated from source/palette.json. Do not edit by hand.
-name: "Makinda ${label}"
+name: "Chalii ${label}"
 accent: "${c("brand.primary")}"
 background: "${c("bg.editor")}"
 foreground: "${c("fg.default")}"
@@ -43,4 +43,4 @@ terminal_colors:
 }
 
 console.log("Building Warp themes\u2026");
-for (const v of VARIANTS) writeOut(`ports/warp/makinda_${v}.yaml`, render(v));
+for (const v of VARIANTS) writeOut(`ports/warp/chalii_${v}.yaml`, render(v));

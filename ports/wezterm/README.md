@@ -1,17 +1,17 @@
-# Makinda Themes — WezTerm
+# Chalii Themes — WezTerm
 
 ## Install
 
-Drop `makinda.lua` somewhere on Lua's `package.path`, e.g.
-`~/.config/wezterm/colors/makinda.lua`, then in `~/.config/wezterm/wezterm.lua`:
+Drop `chalii.lua` somewhere on Lua's `package.path`, e.g.
+`~/.config/wezterm/colors/chalii.lua`, then in `~/.config/wezterm/wezterm.lua`:
 
 ```lua
 local wezterm = require('wezterm')
-local makinda = require('colors.makinda')
+local chalii = require('colors.chalii')
 
 return {
-    color_schemes = makinda,
-    color_scheme = 'Makinda Dark', -- or 'Makinda Light'
+    color_schemes = chalii,
+    color_scheme = 'Chalii Dark', -- or 'Chalii Light'
 }
 ```
 

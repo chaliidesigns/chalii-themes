@@ -1,6 +1,6 @@
-# Makinda Themes — JetBrains plugin
+# Chalii Themes — JetBrains plugin
 
-This is the JetBrains port of [Makinda Themes](../../README.md). It ships **Makinda Light** and **Makinda Dark** as a single plugin compatible with every IntelliJ-based IDE: IntelliJ IDEA, WebStorm, PyCharm, GoLand, RustRover, Rider, PhpStorm, RubyMine, Android Studio, etc.
+This is the JetBrains port of [Chalii Themes](../../README.md). It ships **Chalii Light** and **Chalii Dark** as a single plugin compatible with every IntelliJ-based IDE: IntelliJ IDEA, WebStorm, PyCharm, GoLand, RustRover, Rider, PhpStorm, RubyMine, Android Studio, etc.
 
 ## Layout
 
@@ -13,10 +13,10 @@ ports/jetbrains/
     ├── META-INF/
     │   └── plugin.xml              # plugin manifest, registers both themes
     └── themes/                     # GENERATED — do not edit by hand
-        ├── makinda-light.theme.json
-        ├── makinda-light.icls
-        ├── makinda-dark.theme.json
-        └── makinda-dark.icls
+        ├── chalii-light.theme.json
+        ├── chalii-light.icls
+        ├── chalii-dark.theme.json
+        └── chalii-dark.icls
 ```
 
 The two `.theme.json` and two `.icls` files are produced by `build/jetbrains.mjs` from `source/palette.json`. Run `npm run build` (or `npm run build:jetbrains`) at the repo root to regenerate them whenever the palette changes.
@@ -37,13 +37,13 @@ gradle wrapper --gradle-version 8.10
 
 The first run downloads the IntelliJ Community IDE (~1 GB) into Gradle's cache. Subsequent runs reuse it.
 
-In the sandbox IDE: `Settings → Appearance & Behavior → Appearance → Theme` and pick **Makinda Light** or **Makinda Dark**.
+In the sandbox IDE: `Settings → Appearance & Behavior → Appearance → Theme` and pick **Chalii Light** or **Chalii Dark**.
 
 ## Build a distributable
 
 ```bash
 ./gradlew buildPlugin
-# → build/distributions/makinda-themes-<version>.zip
+# → build/distributions/chalii-themes-<version>.zip
 ```
 
 That `.zip` is the artifact you upload to the JetBrains Marketplace, or share for "Install plugin from disk".

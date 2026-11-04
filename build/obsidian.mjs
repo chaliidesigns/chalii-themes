@@ -6,8 +6,8 @@
  *   ports/obsidian/manifest.json    (Obsidian theme manifest)
  *
  * Install (manual): drop both files into
- *   <vault>/.obsidian/themes/Makinda/
- * Then enable via Settings \u2192 Appearance \u2192 Themes \u2192 Makinda.
+ *   <vault>/.obsidian/themes/Chalii/
+ * Then enable via Settings \u2192 Appearance \u2192 Themes \u2192 Chalii.
  */
 
 import { loadPalette, makeResolver, writeOut, VARIANTS } from "./lib/resolve.mjs";
@@ -103,7 +103,7 @@ function vars(variant) {
 }
 
 const css = `/*
- * Makinda Themes \u2014 Obsidian
+ * Chalii Themes \u2014 Obsidian
  * Generated from source/palette.json. Do not edit by hand.
  *
  * Auto-switches with Obsidian's appearance setting.
@@ -131,7 +131,7 @@ ${vars("dark")}}
 `;
 
 const manifest = {
-    name: "Makinda",
+    name: "Chalii",
     version: palette.version || "1.0.1",
     minAppVersion: "1.0.0",
     author: "Jackson Makinda",

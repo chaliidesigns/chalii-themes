@@ -1,8 +1,8 @@
 # TODO — Multi-Editor Port
 
-Tracking the expansion of Makinda Themes from VS Code-only to a cross-editor theme suite. See [SCOPE.md](SCOPE.md), [IDES.md](IDES.md), and [THEMES.md](THEMES.md) for context.
+Tracking the expansion of Chalii Themes from VS Code-only to a cross-editor theme suite. See [SCOPE.md](SCOPE.md), [IDES.md](IDES.md), and [THEMES.md](THEMES.md) for context.
 
-> **Companion repo:** icon design lives in `~/Downloads/01.GitHub/makinda-icons` (`makinda-icons`). Out of scope for this checklist; tracked separately.
+> **Companion repo:** icon design lives in `~/Downloads/01.GitHub/chalii-icons` (`chalii-icons`). Out of scope for this checklist; tracked separately.
 
 Status legend: `[ ]` not started · `[~]` in progress · `[x]` done
 
@@ -43,14 +43,14 @@ Capture each at 1600×1000 with the same window chrome and font (Fira Code 14, l
 - [ ] `images/light-json.png` / `images/dark-json.png` — package.json or similar nested structure
 - [ ] `images/light-html.png` / `images/dark-html.png` — HTML/JSX with attributes
 
-### Marketplace migration (`makinda-dark` → `makinda-themes`)
+### Marketplace migration (`chalii-dark` → `chalii-themes`)
 
-The Dark variant used to ship as the standalone extension `makindajack.makinda-dark`. Now that both variants live together in `makindajack.makinda-themes`, the old listing has to be retired. See [PUBLISHING.md → Migrating from `makinda-dark`](PUBLISHING.md#migrating-from-makinda-dark-one-time) for steps.
+The Dark variant used to ship as the standalone extension `makindajack.chalii-dark`. Now that both variants live together in `makindajack.chalii-themes`, the old listing has to be retired. See [PUBLISHING.md → Migrating from `chalii-dark`](PUBLISHING.md#migrating-from-chalii-dark-one-time) for steps.
 
-- [x] Push a final `makinda-dark` patch release whose README points users to `makinda-themes` (optional but friendly)
-- [x] **Unpublish `makindajack.makinda-dark`** from the VS Code Marketplace (publisher portal)
-- [x] Confirm only `makinda-themes` is listed at <https://marketplace.visualstudio.com/publishers/makindajack>
-- [x] Publish the latest `makinda-themes` (after build script lands) to VS Code Marketplace and Open VSX
+- [x] Push a final `chalii-dark` patch release whose README points users to `chalii-themes` (optional but friendly)
+- [x] **Unpublish `makindajack.chalii-dark`** from the VS Code Marketplace (publisher portal)
+- [x] Confirm only `chalii-themes` is listed at <https://marketplace.visualstudio.com/publishers/makindajack>
+- [x] Publish the latest `chalii-themes` (after build script lands) to VS Code Marketplace and Open VSX
 - [x] Update marketplace README screenshots to show both Light and Dark
 
 ## Phase 2 — Adjacent VS Code ecosystem
@@ -63,8 +63,8 @@ The Dark variant used to ship as the standalone extension `makindajack.makinda-d
 ## Phase 3 — JetBrains
 
 - [x] Scaffold `ports/jetbrains/` Gradle plugin project (`gradle-intellij-plugin`)
-- [x] Generate `Makinda Light.icls` (editor color scheme) from source
-- [x] Generate `Makinda Light.theme.json` (UI theme) from source
+- [x] Generate `Chalii Light.icls` (editor color scheme) from source
+- [x] Generate `Chalii Light.theme.json` (UI theme) from source
 - [x] Same pair for Dark
 - [x] Write `plugin.xml` with both themes registered
 - [ ] Test in IntelliJ IDEA Community (`./gradlew runIde`) — manual
@@ -74,7 +74,7 @@ The Dark variant used to ship as the standalone extension `makindajack.makinda-d
 ## Phase 4 — Sublime Text
 
 - [x] Scaffold `ports/sublime/`
-- [x] Generate `Makinda Light.sublime-color-scheme` from source
+- [x] Generate `Chalii Light.sublime-color-scheme` from source
 - [x] Generate Dark variant
 - [x] Add `messages.json` and `package.json` for Package Control
 - [ ] Submit to Package Control
@@ -82,48 +82,48 @@ The Dark variant used to ship as the standalone extension `makindajack.makinda-d
 ## Phase 5 — Zed
 
 - [x] Scaffold `ports/zed/extension.toml`
-- [x] Generate `themes/makinda.json` containing both variants
+- [x] Generate `themes/chalii.json` containing both variants
 - [ ] Test in Zed
 - [ ] Submit to Zed extension registry
 
 ## Phase 6 — Neovim & Vim
 
-- [x] Scaffold `ports/neovim/lua/makinda/`
+- [x] Scaffold `ports/neovim/lua/chalii/`
 - [x] Generate `init.lua` with `setup({ variant = "light" | "dark" })`
 - [x] Cover Treesitter highlight groups
 - [x] Cover LSP semantic tokens
 - [x] Cover diagnostics, gitsigns, telescope, nvim-tree/neo-tree, lualine
-- [x] Generate Vim fallback `colors/makinda-light.vim` and `colors/makinda-dark.vim`
+- [x] Generate Vim fallback `colors/chalii-light.vim` and `colors/chalii-dark.vim`
 - [x] Cterm (256-color) fallback table
 - [x] README install instructions for lazy.nvim / packer / vim-plug
 
 ## Phase 7 — Xcode
 
 - [x] Scaffold `ports/xcode/`
-- [x] Generate `Makinda Light.xccolortheme` (plist) from source
+- [x] Generate `Chalii Light.xccolortheme` (plist) from source
 - [x] Generate Dark variant
 - [x] Manual install script `install.sh`
 - [x] README with screenshots in Xcode
 
 ## Phase 8 — Helix
 
-- [x] Generate `ports/helix/makinda_light.toml`
-- [x] Generate `ports/helix/makinda_dark.toml`
+- [x] Generate `ports/helix/chalii_light.toml`
+- [x] Generate `ports/helix/chalii_dark.toml`
 - [ ] Submit upstream PR to Helix's `runtime/themes/` directory
 
 ## Phase 9 — Terminals
 
-- [x] iTerm2 — `ports/iterm2/Makinda Light.itermcolors`, `…Dark.itermcolors`
-- [x] Warp — `ports/warp/makinda_light.yaml`, `…dark.yaml`
-- [x] Alacritty — `ports/alacritty/makinda_light.toml`, `…dark.toml`
-- [x] Kitty — `ports/kitty/makinda_light.conf`, `…dark.conf`
-- [x] WezTerm — `ports/wezterm/makinda.lua`
+- [x] iTerm2 — `ports/iterm2/Chalii Light.itermcolors`, `…Dark.itermcolors`
+- [x] Warp — `ports/warp/chalii_light.yaml`, `…dark.yaml`
+- [x] Alacritty — `ports/alacritty/chalii_light.toml`, `…dark.toml`
+- [x] Kitty — `ports/kitty/chalii_light.conf`, `…dark.conf`
+- [x] WezTerm — `ports/wezterm/chalii.lua`
 - [x] Windows Terminal — JSON snippet in `ports/windows-terminal/`
 - [x] Ghostty — theme file in `ports/ghostty/`
 
 ## Phase 10 — Backlog (Tier 3)
 
-- [x] Emacs `makinda-theme.el` (`ports/emacs/`)
+- [x] Emacs `chalii-theme.el` (`ports/emacs/`)
 - [x] Visual Studio (full) `.vssettings` (`ports/visual-studio/`)
 - [x] TextMate `.tmTheme` (`ports/textmate/`)
 - [x] Notepad++ XML (`ports/notepad-plus-plus/`)
@@ -162,7 +162,7 @@ Other:
 
 ## Phase 11 — UX/UI polish pass (2026-05) ✅
 
-Closed out by `1.1.0` — palette realigned to [`source/design-tokens.json`](../source/design-tokens.json) (Tokens-Studio / DTCG export from the Makinda design system).
+Closed out by `1.1.0` — palette realigned to [`source/design-tokens.json`](../source/design-tokens.json) (Tokens-Studio / DTCG export from the Chalii design system).
 
 ### Theme JSON fixes (palette + generated)
 

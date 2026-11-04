@@ -1,0 +1,19 @@
+{
+  "identifier": "com.makindajack.chalii",
+  "name": "Chalii Themes",
+  "organization": "Jackson Makinda",
+  "description": "Premium Light + Dark themes with warm orange accents.",
+  "version": "1.0.1",
+  "categories": [
+    "themes"
+  ],
+  "main": null,
+  "themes": [
+    {
+      "path": "Themes/Chalii Light.json"
+    },
+    {
+      "path": "Themes/Chalii Dark.json"
+    }
+  ]
+}

@@ -29,13 +29,13 @@ function row(variant) {
 }
 
 const lines = [
-    "# Makinda Themes \u2014 Slack sidebar themes",
+    "# Chalii Themes \u2014 Slack sidebar themes",
     "# Paste one of these into Slack \u2192 Preferences \u2192 Themes \u2192 Customize \u2192 Colors.",
     "",
-    "## Makinda Light",
+    "## Chalii Light",
     row("light"),
     "",
-    "## Makinda Dark",
+    "## Chalii Dark",
     row("dark"),
     "",
 ];

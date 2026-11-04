@@ -2,8 +2,8 @@
 /**
  * Generate Eclipse `.epf` (Eclipse Preference File) exports from source/palette.json.
  * Output:
- *   ports/eclipse/makinda-light.epf
- *   ports/eclipse/makinda-dark.epf
+ *   ports/eclipse/chalii-light.epf
+ *   ports/eclipse/chalii-dark.epf
  *
  * Eclipse colors are stored as comma-separated R,G,B integers.
  * Import via: Window → Preferences → "Import…" → choose this file.
@@ -26,10 +26,10 @@ const esc = (s) => s.replace(/=/g, "\\=").replace(/:/g, "\\:");
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const themeId = `makinda-${variant}`;
+    const themeId = `chalii-${variant}`;
 
     const lines = [
-        `# Makinda ${isDark ? "Dark" : "Light"} \u2014 Eclipse preference export`,
+        `# Chalii ${isDark ? "Dark" : "Light"} \u2014 Eclipse preference export`,
         `# Generated from source/palette.json. Do not edit by hand.`,
         `file_export_version=3.0`,
         `\\!@*~/${themeId}=`,
@@ -91,5 +91,5 @@ function build(variant) {
 
 console.log("Building Eclipse .epf files\u2026");
 for (const v of VARIANTS) {
-    writeOut(`ports/eclipse/makinda-${v}.epf`, build(v));
+    writeOut(`ports/eclipse/chalii-${v}.epf`, build(v));
 }

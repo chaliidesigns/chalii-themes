@@ -2,7 +2,7 @@
 /**
  * Helix theme port.
  *
- * Generates `ports/helix/makinda_<variant>.toml` from source/palette.json.
+ * Generates `ports/helix/chalii_<variant>.toml` from source/palette.json.
  *
  * Schema reference:
  *   https://docs.helix-editor.com/themes.html
@@ -12,8 +12,8 @@
  *   - [palette]   named colors
  *
  * Output:
- *   ports/helix/makinda_light.toml
- *   ports/helix/makinda_dark.toml
+ *   ports/helix/chalii_light.toml
+ *   ports/helix/chalii_dark.toml
  */
 
 import { loadPalette, makeResolver, writeOut, VARIANTS } from "./lib/resolve.mjs";
@@ -265,7 +265,7 @@ function build(variant) {
 
     // Render TOML.
     const lines = [
-        `# Makinda ${isDark ? "Dark" : "Light"} \u2014 Helix theme`,
+        `# Chalii ${isDark ? "Dark" : "Light"} \u2014 Helix theme`,
         `# Generated from source/palette.json. Do not edit by hand.`,
         ``,
         `# inherits = "${isDark ? "default" : "default"}"`,
@@ -287,5 +287,5 @@ function build(variant) {
 
 console.log("Building Helix themes\u2026");
 for (const v of VARIANTS) {
-    writeOut(`ports/helix/makinda_${v}.toml`, build(v));
+    writeOut(`ports/helix/chalii_${v}.toml`, build(v));
 }

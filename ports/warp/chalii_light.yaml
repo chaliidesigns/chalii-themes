@@ -1,0 +1,26 @@
+# Chalii Light — Warp theme
+# Generated from source/palette.json. Do not edit by hand.
+name: "Chalii Light"
+accent: "#e65800"
+background: "#ffffff"
+foreground: "#27272a"
+details: "light"
+terminal_colors:
+  normal:
+    black:   "#52525b"
+    red:     "#e11d48"
+    green:   "#059669"
+    yellow:  "#d97706"
+    blue:    "#2563eb"
+    magenta: "#6b26c0"
+    cyan:    "#06b6d4"
+    white:   "#e4e4e7"
+  bright:
+    black:   "#71717a"
+    red:     "#fb7185"
+    green:   "#10b981"
+    yellow:  "#fbbf24"
+    blue:    "#60a5fa"
+    magenta: "#a26ee2"
+    cyan:    "#22d3ee"
+    white:   "#ffffff"

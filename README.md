@@ -1,22 +1,22 @@
 <h1 align="center">
   <br>
-  <img src="images/icon.png" alt="Makinda Themes" width="128">
+  <img src="images/icon.png" alt="Chalii Themes" width="128">
   <br>
-  Makinda Themes
+  Chalii Themes
   <br>
 </h1>
 
 <h4 align="center">A premium light + dark theme family with warm orange accents — shipping to <strong>20+ editors, IDEs, terminals, and apps</strong> from a single source palette.</h4>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes">
-    <img alt="Version" src="https://vsmarketplacebadges.dev/version-short/makindajack.makinda-themes.svg?style=for-the-badge&labelColor=0e0e0f&color=f05106">
+  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.chalii-themes">
+    <img alt="Version" src="https://vsmarketplacebadges.dev/version-short/makindajack.chalii-themes.svg?style=for-the-badge&labelColor=0e0e0f&color=f05106">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes">
-    <img alt="Installs" src="https://vsmarketplacebadges.dev/installs-short/makindajack.makinda-themes.svg?style=for-the-badge&labelColor=0e0e0f&color=f05106">
+  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.chalii-themes">
+    <img alt="Installs" src="https://vsmarketplacebadges.dev/installs-short/makindajack.chalii-themes.svg?style=for-the-badge&labelColor=0e0e0f&color=f05106">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes">
-    <img alt="Rating" src="https://vsmarketplacebadges.dev/rating-short/makindajack.makinda-themes.svg?style=for-the-badge&labelColor=0e0e0f&color=f05106">
+  <a href="https://marketplace.visualstudio.com/items?itemName=makindajack.chalii-themes">
+    <img alt="Rating" src="https://vsmarketplacebadges.dev/rating-short/makindajack.chalii-themes.svg?style=for-the-badge&labelColor=0e0e0f&color=f05106">
   </a>
 </p>
 
@@ -37,14 +37,14 @@
 
 This extension ships **two** complementary themes:
 
-- **Makinda Light** — Clean white editor with subtle gray sidebars, warm orange accents, and high-contrast syntax highlighting for long, comfortable coding sessions.
-- **Makinda Dark** — Deep `#0e0e0f` background with vibrant orange accents, purple types, and teal strings. 140+ token scopes and 200+ UI color definitions.
+- **Chalii Light** — Clean white editor with subtle gray sidebars, warm orange accents, and high-contrast syntax highlighting for long, comfortable coding sessions.
+- **Chalii Dark** — Deep `#0e0e0f` background with vibrant orange accents, purple types, and teal strings. 140+ token scopes and 200+ UI color definitions.
 
 Both variants share the same brand language, so switching between them keeps your code visually consistent.
 
 ### Color Palette
 
-| Element            | Makinda Light | Makinda Dark |
+| Element            | Chalii Light | Chalii Dark |
 | ------------------ | ------------- | ------------ |
 | Brand Orange       | `#e65800`     | `#ff711a`    |
 | Functions          | `#e65800`     | `#ff9452`    |
@@ -60,13 +60,13 @@ Both variants share the same brand language, so switching between them keeps you
 ### From VS Code Marketplace
 
 1. Open the **Extensions** sidebar: `View → Extensions`
-2. Search for `Makinda Themes`
+2. Search for `Chalii Themes`
 3. Click **Install**
 
 ### From Command Line
 
 ```bash
-code --install-extension makindajack.makinda-themes
+code --install-extension makindajack.chalii-themes
 ```
 
 ### Manual Installation
@@ -76,16 +76,16 @@ code --install-extension makindajack.makinda-themes
 
 ## Compatible Editors
 
-Makinda is generated from a single `source/palette.json` and ports to every major editor, IDE, terminal, and chat/notes app.
+Chalii is generated from a single `source/palette.json` and ports to every major editor, IDE, terminal, and chat/notes app.
 
 ### Code editors & IDEs
 
 | Editor                     | Format                  | Install                                                   |
 | -------------------------- | ----------------------- | --------------------------------------------------------- |
-| **VS Code**                | `*.color-theme.json`    | `code --install-extension makindajack.makinda-themes`     |
-| **Cursor**                 | (VS Code theme)         | `cursor --install-extension makindajack.makinda-themes`   |
-| **Windsurf**               | (Open VSX)              | `windsurf --install-extension makindajack.makinda-themes` |
-| **VSCodium / code-server** | (Open VSX)              | `codium --install-extension makindajack.makinda-themes`   |
+| **VS Code**                | `*.color-theme.json`    | `code --install-extension makindajack.chalii-themes`     |
+| **Cursor**                 | (VS Code theme)         | `cursor --install-extension makindajack.chalii-themes`   |
+| **Windsurf**               | (Open VSX)              | `windsurf --install-extension makindajack.chalii-themes` |
+| **VSCodium / code-server** | (Open VSX)              | `codium --install-extension makindajack.chalii-themes`   |
 | **JetBrains IDEs**         | `.icls` + `.theme.json` | [ports/jetbrains/](ports/jetbrains/)                      |
 | **Sublime Text**           | `.sublime-color-scheme` | [ports/sublime/](ports/sublime/)                          |
 | **Zed**                    | Zed theme JSON          | [ports/zed/](ports/zed/)                                  |
@@ -130,15 +130,15 @@ Open the Color Theme picker:
 - macOS: `⌘K ⌘T`
 - Windows / Linux: `Ctrl+K Ctrl+T`
 
-Select **Makinda Light** or **Makinda Dark**.
+Select **Chalii Light** or **Chalii Dark**.
 
 To have VS Code switch automatically with your OS appearance, enable `window.autoDetectColorScheme` and set:
 
 ```json
 {
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "Makinda Light",
-  "workbench.preferredDarkColorTheme": "Makinda Dark"
+  "workbench.preferredLightColorTheme": "Chalii Light",
+  "workbench.preferredDarkColorTheme": "Chalii Dark"
 }
 ```
 
@@ -146,13 +146,13 @@ To have VS Code switch automatically with your OS appearance, enable `window.aut
 
 ### Icon Themes
 
-Pair Makinda Themes with one of these for a complete look:
+Pair Chalii Themes with one of these for a complete look:
 
 - [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons) by Philipp Kief
-- [Nomo Light Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-light) — pairs well with Makinda Light
-- [Nomo Dark Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-dark) — pairs well with Makinda Dark
+- [Nomo Light Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-light) — pairs well with Chalii Light
+- [Nomo Dark Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-dark) — pairs well with Chalii Dark
 
-> A dedicated **Makinda Icons** pack is in active development and will be released as a separate extension.
+> A dedicated **Chalii Icons** pack is in active development and will be released as a separate extension.
 
 ### Font Recommendations
 
@@ -167,51 +167,51 @@ Pair Makinda Themes with one of these for a complete look:
 
 ## Screenshots
 
-### Makinda Light
+### Chalii Light
 
 <p align="center">
-  <img src="images/light-typescript.png" alt="Makinda Light — TypeScript" width="800">
+  <img src="images/light-typescript.png" alt="Chalii Light — TypeScript" width="800">
 </p>
 <p align="center">
-  <img src="images/light-python.png" alt="Makinda Light — Python" width="400">
-  <img src="images/light-rust.png" alt="Makinda Light — Rust" width="400">
+  <img src="images/light-python.png" alt="Chalii Light — Python" width="400">
+  <img src="images/light-rust.png" alt="Chalii Light — Rust" width="400">
 </p>
 <p align="center">
-  <img src="images/light-go.png" alt="Makinda Light — Go" width="400">
-  <img src="images/light-markdown.png" alt="Makinda Light — Markdown" width="400">
+  <img src="images/light-go.png" alt="Chalii Light — Go" width="400">
+  <img src="images/light-markdown.png" alt="Chalii Light — Markdown" width="400">
 </p>
 <p align="center">
-  <img src="images/light-json.png" alt="Makinda Light — JSON" width="400">
-  <img src="images/light-html.png" alt="Makinda Light — HTML" width="400">
+  <img src="images/light-json.png" alt="Chalii Light — JSON" width="400">
+  <img src="images/light-html.png" alt="Chalii Light — HTML" width="400">
 </p>
 
-### Makinda Dark
+### Chalii Dark
 
 <p align="center">
-  <img src="images/dark-typescript.png" alt="Makinda Dark — TypeScript" width="800">
+  <img src="images/dark-typescript.png" alt="Chalii Dark — TypeScript" width="800">
 </p>
 <p align="center">
-  <img src="images/dark-python.png" alt="Makinda Dark — Python" width="400">
-  <img src="images/dark-rust.png" alt="Makinda Dark — Rust" width="400">
+  <img src="images/dark-python.png" alt="Chalii Dark — Python" width="400">
+  <img src="images/dark-rust.png" alt="Chalii Dark — Rust" width="400">
 </p>
 <p align="center">
-  <img src="images/dark-go.png" alt="Makinda Dark — Go" width="400">
-  <img src="images/dark-markdown.png" alt="Makinda Dark — Markdown" width="400">
+  <img src="images/dark-go.png" alt="Chalii Dark — Go" width="400">
+  <img src="images/dark-markdown.png" alt="Chalii Dark — Markdown" width="400">
 </p>
 <p align="center">
-  <img src="images/dark-json.png" alt="Makinda Dark — JSON" width="400">
-  <img src="images/dark-html.png" alt="Makinda Dark — HTML" width="400">
+  <img src="images/dark-json.png" alt="Chalii Dark — JSON" width="400">
+  <img src="images/dark-html.png" alt="Chalii Dark — HTML" width="400">
 </p>
 
-## Migrating from `makinda-dark`
+## Migrating from `chalii-dark`
 
-The standalone `makindajack.makinda-dark` extension is deprecated as of `1.0.1`. Both themes are now bundled in `makindajack.makinda-themes`.
+The standalone `makindajack.chalii-dark` extension is deprecated as of `1.0.1`. Both themes are now bundled in `makindajack.chalii-themes`.
 
 To migrate:
 
-1. Install `makindajack.makinda-themes`.
-2. Uninstall `makindajack.makinda-dark`.
-3. Open the Color Theme picker and re-select **Makinda Dark**.
+1. Install `makindajack.chalii-themes`.
+2. Uninstall `makindajack.chalii-dark`.
+3. Open the Color Theme picker and re-select **Chalii Dark**.
 
 Your settings and theme preference will be preserved.
 

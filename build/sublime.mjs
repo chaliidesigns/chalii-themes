@@ -7,8 +7,8 @@
  *   https://www.sublimetext.com/docs/color_schemes.html
  *
  * Output:
- *   ports/sublime/Makinda Light.sublime-color-scheme
- *   ports/sublime/Makinda Dark.sublime-color-scheme
+ *   ports/sublime/Chalii Light.sublime-color-scheme
+ *   ports/sublime/Chalii Dark.sublime-color-scheme
  *
  * Static Package Control files (messages.json, messages/install.txt,
  * package.json, README.md) live next to these and are not regenerated.
@@ -21,7 +21,7 @@ const palette = loadPalette();
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const label = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const label = `Chalii ${isDark ? "Dark" : "Light"}`;
 
     return {
         name: label,
@@ -157,5 +157,5 @@ console.log("Building Sublime Text color schemes\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
     const json = JSON.stringify(build(v), null, 2) + "\n";
-    writeOut(`ports/sublime/Makinda ${label}.sublime-color-scheme`, json);
+    writeOut(`ports/sublime/Chalii ${label}.sublime-color-scheme`, json);
 }

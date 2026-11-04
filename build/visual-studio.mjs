@@ -2,8 +2,8 @@
 /**
  * Generate Visual Studio (full IDE) `.vssettings` files from source/palette.json.
  * Output:
- *   ports/visual-studio/Makinda Light.vssettings
- *   ports/visual-studio/Makinda Dark.vssettings
+ *   ports/visual-studio/Chalii Light.vssettings
+ *   ports/visual-studio/Chalii Dark.vssettings
  *
  * Visual Studio exports color settings as a partial Tools→Options snapshot
  * (UTF-8 XML). Import via: Tools → Import and Export Settings → Import.
@@ -35,7 +35,7 @@ function item(name, fg, bg = null, bold = false) {
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const label = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const label = `Chalii ${isDark ? "Dark" : "Light"}`;
     const bg = c("bg.editor");
     const fg = c("fg.default");
 
@@ -110,7 +110,7 @@ ${items.join("\n")}
             </ToolsOptionsSubCategory>
         </ToolsOptionsCategory>
     </ToolsOptions>
-    <Category name="Makinda" Category="{${isDark ? "B6E3D7E1-9D6F-4F9F-9F7B-DARK0000MAKI" : "B6E3D7E1-9D6F-4F9F-9F7B-LITE0000MAKI"}}" Package="" RegisteredName="${label}">
+    <Category name="Chalii" Category="{${isDark ? "B6E3D7E1-9D6F-4F9F-9F7B-DARK0000MAKI" : "B6E3D7E1-9D6F-4F9F-9F7B-LITE0000MAKI"}}" Package="" RegisteredName="${label}">
         <PropertyValue name="DisplayName">${label}</PropertyValue>
     </Category>
 </UserSettings>
@@ -120,5 +120,5 @@ ${items.join("\n")}
 console.log("Building Visual Studio settings\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
-    writeOut(`ports/visual-studio/Makinda ${label}.vssettings`, build(v));
+    writeOut(`ports/visual-studio/Chalii ${label}.vssettings`, build(v));
 }

@@ -2,7 +2,7 @@
 
 This document is the canonical color and token spec. Every editor port must derive from these tables. If a value is missing for a given token, fall back to the closest semantic role.
 
-> Implementation note: the long-term plan is `source/palette.json` + `source/tokens.json` driving build scripts. Until that lands, this Markdown is the spec — keep it in sync with `themes/Makinda Light-color-theme.json` and `themes/Makinda Dark-color-theme.json`.
+> Implementation note: the long-term plan is `source/palette.json` + `source/tokens.json` driving build scripts. Until that lands, this Markdown is the spec — keep it in sync with `themes/Chalii Light-color-theme.json` and `themes/Chalii Dark-color-theme.json`.
 
 ## Brand
 

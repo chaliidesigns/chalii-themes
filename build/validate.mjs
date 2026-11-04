@@ -2,7 +2,7 @@
 /**
  * validate.mjs — Phase 0 audit tool.
  *
- * Scans themes/Makinda Light-color-theme.json and themes/Makinda Dark-color-theme.json,
+ * Scans themes/Chalii Light-color-theme.json and themes/Chalii Dark-color-theme.json,
  * extracts every hex color used, and reports which ones are NOT defined in
  * source/palette.json. The goal is to drive the palette/themes toward a 1:1
  * relationship so future ports can be generated mechanically.
@@ -52,8 +52,8 @@ function base(hex) {
 
 const variants = ["light", "dark"];
 const themeFiles = {
-    light: "themes/Makinda Light-color-theme.json",
-    dark: "themes/Makinda Dark-color-theme.json",
+    light: "themes/Chalii Light-color-theme.json",
+    dark: "themes/Chalii Dark-color-theme.json",
 };
 
 const report = {};

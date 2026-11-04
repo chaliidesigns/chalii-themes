@@ -7,8 +7,8 @@
  * hex values with palette role references.
  *
  * Output (matches current marketplace package paths):
- *   themes/Makinda Light-color-theme.json
- *   themes/Makinda Dark-color-theme.json
+ *   themes/Chalii Light-color-theme.json
+ *   themes/Chalii Dark-color-theme.json
  */
 
 import { readFileSync } from "node:fs";
@@ -16,8 +16,8 @@ import { join } from "node:path";
 import { root, VARIANTS, writeOut } from "./lib/resolve.mjs";
 
 const OUT = {
-    light: "themes/Makinda Light-color-theme.json",
-    dark: "themes/Makinda Dark-color-theme.json",
+    light: "themes/Chalii Light-color-theme.json",
+    dark: "themes/Chalii Dark-color-theme.json",
 };
 
 function loadSource(variant) {

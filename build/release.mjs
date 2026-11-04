@@ -13,7 +13,7 @@
  *   ports/sublime/package.json                            (Package Control)
  *   ports/zed/extension.toml                              (Zed registry)
  *   ports/jetbrains/gradle.properties                     (JetBrains plugin)
- *   ports/nova/Makinda.novaextension/extension.json      (Nova manifest)
+ *   ports/nova/Chalii.novaextension/extension.json      (Nova manifest)
  *   ports/obsidian/manifest.json                          (Obsidian theme)
  *
  * Files only updated if they actually exist.
@@ -64,7 +64,7 @@ function regex(relPath, pattern, replace) {
 jsonField("package.json", "version");
 jsonField("source/palette.json", "version");
 jsonField("ports/sublime/package.json", "version");
-jsonField("ports/nova/Makinda.novaextension/extension.json", "version");
+jsonField("ports/nova/Chalii.novaextension/extension.json", "version");
 jsonField("ports/obsidian/manifest.json", "version");
 regex("ports/zed/extension.toml", /^version\s*=\s*"[^"]+"/m, `version = "${version}"`);
 regex("ports/jetbrains/gradle.properties", /^pluginVersion\s*=.*$/m, `pluginVersion=${version}`);

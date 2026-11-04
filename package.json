@@ -1,6 +1,6 @@
 {
-  "name": "makinda-themes",
-  "displayName": "Makinda Themes",
+  "name": "chalii-themes",
+  "displayName": "Chalii Themes",
   "description": "Premium light and dark themes for VS Code with warm orange accents and excellent readability",
   "version": "1.1.0",
   "publisher": "makindajack",
@@ -26,10 +26,10 @@
     "light theme",
     "dark theme",
     "orange",
-    "makinda",
-    "makinda light",
-    "makinda dark",
-    "makinda themes",
+    "chalii",
+    "chalii light",
+    "chalii dark",
+    "chalii themes",
     "makindajack",
     "jackson makinda",
     "color theme",
@@ -49,14 +49,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Makinda Light",
+        "label": "Chalii Light",
         "uiTheme": "vs",
-        "path": "./themes/Makinda Light-color-theme.json"
+        "path": "./themes/Chalii Light-color-theme.json"
       },
       {
-        "label": "Makinda Dark",
+        "label": "Chalii Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Makinda Dark-color-theme.json"
+        "path": "./themes/Chalii Dark-color-theme.json"
       }
     ]
   },

@@ -115,14 +115,14 @@ func main() {
     },
     markdown: {
         lang: "markdown",
-        code: `# Makinda Themes
+        code: `# Chalii Themes
 
 > Premium **Light** and _Dark_ themes with warm orange accents.
 
 ## Install
 
 \`\`\`bash
-code --install-extension makindajack.makinda-themes
+code --install-extension makindajack.chalii-themes
 \`\`\`
 
 - Works in VS Code, Cursor, Windsurf
@@ -138,16 +138,16 @@ code --install-extension makindajack.makinda-themes
     json: {
         lang: "json",
         code: `{
-    "name": "makinda-themes",
-    "displayName": "Makinda Themes",
+    "name": "chalii-themes",
+    "displayName": "Chalii Themes",
     "version": "1.0.1",
     "publisher": "makindajack",
     "engines": { "vscode": "^1.74.0" },
     "categories": ["Themes"],
     "contributes": {
         "themes": [
-            { "label": "Makinda Light", "uiTheme": "vs", "path": "./themes/Makinda Light-color-theme.json" },
-            { "label": "Makinda Dark",  "uiTheme": "vs-dark", "path": "./themes/Makinda Dark-color-theme.json" }
+            { "label": "Chalii Light", "uiTheme": "vs", "path": "./themes/Chalii Light-color-theme.json" },
+            { "label": "Chalii Dark",  "uiTheme": "vs-dark", "path": "./themes/Chalii Dark-color-theme.json" }
         ]
     }
 }`,
@@ -158,12 +158,12 @@ code --install-extension makindajack.makinda-themes
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Makinda</title>
+        <title>Chalii</title>
         <link rel="stylesheet" href="/styles.css" />
     </head>
     <body class="theme-dark">
         <main id="root" data-theme="dark">
-            <h1 class="brand">Makinda</h1>
+            <h1 class="brand">Chalii</h1>
             <p>Premium themes &mdash; <a href="/install">install now</a>.</p>
         </main>
         <script src="/app.js"></script>
@@ -182,17 +182,17 @@ async function main() {
 
     const themes = {
         light: JSON.parse(
-            readFileSync(join(root, "themes/Makinda Light-color-theme.json"), "utf8"),
+            readFileSync(join(root, "themes/Chalii Light-color-theme.json"), "utf8"),
         ),
         dark: JSON.parse(
-            readFileSync(join(root, "themes/Makinda Dark-color-theme.json"), "utf8"),
+            readFileSync(join(root, "themes/Chalii Dark-color-theme.json"), "utf8"),
         ),
     };
 
     const highlighter = await createHighlighter({
         themes: [
-            { ...themes.light, name: "makinda-light", type: "light" },
-            { ...themes.dark, name: "makinda-dark", type: "dark" },
+            { ...themes.light, name: "chalii-light", type: "light" },
+            { ...themes.dark, name: "chalii-dark", type: "dark" },
         ],
         langs: ["tsx", "python", "rust", "go", "markdown", "json", "html"],
     });
@@ -205,7 +205,7 @@ async function main() {
     const page = await ctx.newPage();
 
     for (const variant of ["light", "dark"]) {
-        const themeName = `makinda-${variant}`;
+        const themeName = `chalii-${variant}`;
         const editorBg = themes[variant].colors["editor.background"];
         for (const [name, { lang, code }] of Object.entries(samples)) {
             const html = highlighter.codeToHtml(code, { lang, theme: themeName });

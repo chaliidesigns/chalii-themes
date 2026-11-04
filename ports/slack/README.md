@@ -1,4 +1,4 @@
-# Makinda Themes — Slack
+# Chalii Themes — Slack
 
 Custom sidebar themes for the Slack desktop client.
 

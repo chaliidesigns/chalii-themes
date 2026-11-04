@@ -1,4 +1,4 @@
-# Makinda Themes — TextMate
+# Chalii Themes — TextMate
 
 `.tmTheme` files for TextMate (and any editor that consumes TextMate themes
 directly, such as some Sublime Text plugins or older tooling).

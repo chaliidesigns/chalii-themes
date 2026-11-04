@@ -1,4 +1,4 @@
-# Makinda Themes — Ghostty
+# Chalii Themes — Ghostty
 
 ## Install
 
@@ -10,9 +10,9 @@ Copy both files into Ghostty's themes directory:
 Then in your Ghostty config:
 
 ```
-theme = Makinda Dark
+theme = Chalii Dark
 # or
-theme = Makinda Light
+theme = Chalii Light
 ```
 
 ## Source of truth

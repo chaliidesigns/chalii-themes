@@ -4,8 +4,8 @@
  * source/palette.json.
  *
  * Output:
- *   ports/notepad-plus-plus/Makinda Light.xml
- *   ports/notepad-plus-plus/Makinda Dark.xml
+ *   ports/notepad-plus-plus/Chalii Light.xml
+ *   ports/notepad-plus-plus/Chalii Dark.xml
  *
  * Notepad++ themes follow `userDefineLang` / `LexerStyles` / `GlobalStyles`
  * structure under a top-level <NotepadPlus> root. We emit GlobalStyles plus
@@ -33,7 +33,7 @@ function ws(name, styleID, fg, bg, fontStyle = 0) {
 function build(variant) {
     const c = makeResolver(palette, variant);
     const isDark = variant === "dark";
-    const label = `Makinda ${isDark ? "Dark" : "Light"}`;
+    const label = `Chalii ${isDark ? "Dark" : "Light"}`;
     const bg = c("bg.editor");
     const bg1 = c("bg.elevated1");
     const bg2 = c("bg.elevated2");
@@ -222,5 +222,5 @@ ${lexerBlocks.join("\n")}
 console.log("Building Notepad++ themes\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
-    writeOut(`ports/notepad-plus-plus/Makinda ${label}.xml`, build(v));
+    writeOut(`ports/notepad-plus-plus/Chalii ${label}.xml`, build(v));
 }

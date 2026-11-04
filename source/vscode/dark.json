@@ -1,6 +1,6 @@
 {
-  "_comment": "Editable source for VS Code dark theme. Generated artifact: themes/Makinda Dark-color-theme.json. Run `npm run build:vscode` to regenerate.",
-  "name": "Makinda Dark",
+  "_comment": "Editable source for VS Code dark theme. Generated artifact: themes/Chalii Dark-color-theme.json. Run `npm run build:vscode` to regenerate.",
+  "name": "Chalii Dark",
   "type": "dark",
   "semanticHighlighting": true,
   "semanticTokenColors": {

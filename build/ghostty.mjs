@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
  * Generate Ghostty themes from source/palette.json.
- * Output: ports/ghostty/Makinda Light, ports/ghostty/Makinda Dark
+ * Output: ports/ghostty/Chalii Light, ports/ghostty/Chalii Dark
  *
  * Schema: https://ghostty.org/docs/config/reference#theme
  * Ghostty themes are plain config snippets. Drop into:
  *   $XDG_CONFIG_HOME/ghostty/themes/  (Linux)
  *   ~/Library/Application Support/com.mitchellh.ghostty/themes/  (macOS)
- * Then set `theme = Makinda Dark` in your config.
+ * Then set `theme = Chalii Dark` in your config.
  */
 
 import { loadPalette, makeResolver, writeOut, VARIANTS } from "./lib/resolve.mjs";
@@ -22,7 +22,7 @@ function render(variant) {
     const c = makeResolver(palette, variant);
     const label = variant === "dark" ? "Dark" : "Light";
     const lines = [
-        `# Makinda ${label} \u2014 Ghostty theme`,
+        `# Chalii ${label} \u2014 Ghostty theme`,
         `# Generated from source/palette.json. Do not edit by hand.`,
         ``,
         `background = ${stripAlpha(c("bg.editor")).replace(/^#/, "")}`,
@@ -48,5 +48,5 @@ function render(variant) {
 console.log("Building Ghostty themes\u2026");
 for (const v of VARIANTS) {
     const label = v === "dark" ? "Dark" : "Light";
-    writeOut(`ports/ghostty/Makinda ${label}`, render(v));
+    writeOut(`ports/ghostty/Chalii ${label}`, render(v));
 }
