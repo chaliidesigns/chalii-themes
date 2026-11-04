@@ -1,7 +1,7 @@
 ;;; makinda-light-theme.el --- Makinda Light theme  -*- lexical-binding: t; -*-
 ;;
 ;; Author: Jackson Makinda
-;; URL: https://github.com/chaliidesigns/makinda-themes
+;; URL: https://github.com/chaliidesigns/chalii-themes
 ;; Generated from source/palette.json. Do not edit by hand.
 ;;
 ;;; Commentary:

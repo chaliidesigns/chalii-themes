@@ -12,7 +12,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
 
 If you find a bug or have a suggestion:
 
-1. Check [existing issues](https://github.com/chaliidesigns/makinda-themes/issues) to avoid duplicates
+1. Check [existing issues](https://github.com/chaliidesigns/chalii-themes/issues) to avoid duplicates
 2. Open a new issue with a clear title and description
 3. Include:
    - VS Code version

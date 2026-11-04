@@ -16,5 +16,5 @@ Or set in Preferences.sublime-settings:
         "color_scheme": "Packages/Makinda Themes/Makinda Dark.sublime-color-scheme"
     }
 
-Source: https://github.com/chaliidesigns/makinda-themes
-Issues: https://github.com/chaliidesigns/makinda-themes/issues
+Source: https://github.com/chaliidesigns/chalii-themes
+Issues: https://github.com/chaliidesigns/chalii-themes/issues

@@ -16,7 +16,7 @@ e.g. `~/.emacs.d/themes/`, and load:
 
 ```elisp
 (use-package makinda-themes
-  :straight (:host github :repo "chaliidesigns/makinda-themes" :files ("ports/emacs/*.el"))
+  :straight (:host github :repo "chaliidesigns/chalii-themes" :files ("ports/emacs/*.el"))
   :config (load-theme 'makinda-dark t))
 ```
 

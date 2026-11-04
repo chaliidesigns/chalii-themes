@@ -21,14 +21,14 @@ If this is your first time, read [§ One-time setup](#one-time-setup) first to c
 | 3    | **Eclipse Marketplace**                                                                                                  | Web form                                                                                     | account             | manual upload                                            |
 | 3    | **Nova Extensions**                                                                                                      | `nova extension publish`                                                                     | Panic ID + Nova app | CLI                                                      |
 | —    | **Terminals** (Alacritty, Kitty, Warp, iTerm2, WezTerm, Ghostty, Windows Terminal, Helix, Lapce)                         | No marketplace                                                                               | n/a                 | committed in [ports/](../ports) — users pull from GitHub |
-| —    | **Other** (Slack, Emacs, Neovim, Xcode, TextMate, BBEdit, Notepad++, Eclipse EPF, Discord, Visual Studio settings, Nova) | Distributed via the [GitHub release](https://github.com/chaliidesigns/makinda-themes/releases) | n/a                 | re-tag the release                                       |
+| —    | **Other** (Slack, Emacs, Neovim, Xcode, TextMate, BBEdit, Notepad++, Eclipse EPF, Discord, Visual Studio settings, Nova) | Distributed via the [GitHub release](https://github.com/chaliidesigns/chalii-themes/releases) | n/a                 | re-tag the release                                       |
 
 The repos that anchor the marketplace listings:
 
 | Repo                                                                            | Marketplace                           |
 | ------------------------------------------------------------------------------- | ------------------------------------- |
-| [chaliidesigns/makinda-themes](https://github.com/chaliidesigns/makinda-themes)     | source-of-truth + VS Code + JetBrains |
-| [chaliidesigns/makinda-sublime](https://github.com/chaliidesigns/makinda-sublime)   | Package Control                       |
+| [chaliidesigns/chalii-themes](https://github.com/chaliidesigns/chalii-themes)     | source-of-truth + VS Code + JetBrains |
+| [chaliidesigns/chalii-sublime](https://github.com/chaliidesigns/chalii-sublime)   | Package Control                       |
 | [chaliiwaui/makinda-obsidian](https://github.com/chaliiwaui/makinda-obsidian) | Obsidian themes                       |
 | [chaliiwaui/makinda-zed](https://github.com/chaliiwaui/makinda-zed)           | Zed extensions                        |
 
@@ -165,7 +165,7 @@ WORK=/tmp/makinda-publish
 mkdir -p $WORK && cd $WORK
 
 # --- Sublime ---
-git clone git@github.com:chaliidesigns/makinda-sublime.git
+git clone git@github.com:chaliidesigns/chalii-sublime.git
 cd makinda-sublime
 rm -f *.sublime-color-scheme messages.json package.json README.md
 rm -rf messages
@@ -265,9 +265,9 @@ Reupload the relevant artifacts to the web portals listed in [§ One-time setup 
 ### 11. Post-release verification
 
 - [ ] <https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes> shows `$NEW` (cache can take ~5 min)
-- [ ] <https://open-vsx.org/extension/chaliidesigns/makinda-themes> shows `$NEW`
+- [ ] <https://open-vsx.org/extension/chaliidesigns/chalii-themes> shows `$NEW`
 - [ ] <https://plugins.jetbrains.com/plugin/me> JetBrains listing shows `$NEW` (after moderation)
-- [ ] [GitHub release](https://github.com/chaliidesigns/makinda-themes/releases) page shows `$NEW` with both artifacts attached
+- [ ] [GitHub release](https://github.com/chaliidesigns/chalii-themes/releases) page shows `$NEW` with both artifacts attached
 - [ ] Both standalone repos show `$NEW` tags
 - [ ] Tier-2 PRs merged or pending
 
@@ -322,7 +322,7 @@ Their validator requires `screenshot.png` at the **root** of `chaliiwaui/makinda
 
 ### Package Control still shows the old version
 
-Package Control polls tags every few hours. Confirm your new tag exists at <https://github.com/chaliidesigns/makinda-sublime/tags> and wait. There's no faster path.
+Package Control polls tags every few hours. Confirm your new tag exists at <https://github.com/chaliidesigns/chalii-sublime/tags> and wait. There's no faster path.
 
 ---
 
@@ -337,10 +337,10 @@ npx --yes @vscode/vsce show makindajack.makinda-themes
 
 # Open every marketplace listing in a browser
 open https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes
-open https://open-vsx.org/extension/chaliidesigns/makinda-themes
+open https://open-vsx.org/extension/chaliidesigns/chalii-themes
 open https://plugins.jetbrains.com/plugin/me
 open https://packagecontrol.io/packages/Makinda%20Themes
-open https://github.com/chaliidesigns/makinda-themes/releases
+open https://github.com/chaliidesigns/chalii-themes/releases
 ```
 
 ---

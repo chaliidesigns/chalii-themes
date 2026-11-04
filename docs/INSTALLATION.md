@@ -55,7 +55,7 @@ Or in VS Code:
 
 ```bash
 # Clone the repository
-git clone https://github.com/chaliidesigns/makinda-themes.git
+git clone https://github.com/chaliidesigns/chalii-themes.git
 
 # Open in VS Code
 code makinda-themes
@@ -87,7 +87,7 @@ cursor --install-extension makindajack.makinda-themes
 Windsurf ships with the Open VSX marketplace by default.
 
 1. Open Windsurf → **Extensions**.
-2. Search `Makinda Themes` (publisher: `makindajack`) — the listing comes from <https://open-vsx.org/extension/chaliidesigns/makinda-themes>.
+2. Search `Makinda Themes` (publisher: `makindajack`) — the listing comes from <https://open-vsx.org/extension/chaliidesigns/chalii-themes>.
 3. Install, then activate the theme exactly as in VS Code.
 
 CLI alternative:
@@ -107,7 +107,7 @@ codium --install-extension makindajack.makinda-themes
 
 ### Offline / air-gapped (any of the above)
 
-Download `makinda-themes-<version>.vsix` from [GitHub Releases](https://github.com/chaliidesigns/makinda-themes/releases) and install with the editor's `--install-extension` flag, or via **Command Palette → Extensions: Install from VSIX…**.
+Download `makinda-themes-<version>.vsix` from [GitHub Releases](https://github.com/chaliidesigns/chalii-themes/releases) and install with the editor's `--install-extension` flag, or via **Command Palette → Extensions: Install from VSIX…**.
 
 > Tip: regardless of editor, you can enable OS-appearance auto-switching with `window.autoDetectColorScheme` + `workbench.preferredLightColorTheme: "Makinda Light"` + `workbench.preferredDarkColorTheme: "Makinda Dark"` in your settings.
 
@@ -232,5 +232,5 @@ code --uninstall-extension makindajack.makinda-themes
 
 ## Getting Help
 
-- [GitHub Issues](https://github.com/chaliidesigns/makinda-themes/issues)
+- [GitHub Issues](https://github.com/chaliidesigns/chalii-themes/issues)
 - [Email Support](mailto:jacksonmakinda@outlook.com)

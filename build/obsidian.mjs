@@ -135,7 +135,7 @@ const manifest = {
     version: palette.version || "1.0.1",
     minAppVersion: "1.0.0",
     author: "Jackson Makinda",
-    authorUrl: "https://github.com/chaliidesigns/makinda-themes",
+    authorUrl: "https://github.com/chaliidesigns/chalii-themes",
     description:
         "Premium Light + Dark theme with warm orange accents. Auto-switches with system appearance.",
 };

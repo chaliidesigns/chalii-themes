@@ -34,7 +34,7 @@ makinda-themes/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/chaliidesigns/makinda-themes.git
+git clone https://github.com/chaliidesigns/chalii-themes.git
 cd makinda-themes
 ```
 

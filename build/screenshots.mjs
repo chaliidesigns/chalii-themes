@@ -127,7 +127,7 @@ code --install-extension makindajack.makinda-themes
 
 - Works in VS Code, Cursor, Windsurf
 - [JetBrains plugin](https://plugins.jetbrains.com/) available
-- Visit <https://github.com/chaliidesigns/makinda-themes>
+- Visit <https://github.com/chaliidesigns/chalii-themes>
 
 | Editor   | Status |
 | -------- | ------ |

@@ -71,7 +71,7 @@ code --install-extension makindajack.makinda-themes
 
 ### Manual Installation
 
-1. Download the latest `.vsix` from [Releases](https://github.com/chaliidesigns/makinda-themes/releases)
+1. Download the latest `.vsix` from [Releases](https://github.com/chaliidesigns/chalii-themes/releases)
 2. In VS Code, run `Extensions: Install from VSIX...` from the Command Palette and pick the file.
 
 ## Compatible Editors
