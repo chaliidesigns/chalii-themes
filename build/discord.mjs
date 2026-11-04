@@ -27,7 +27,7 @@ function build(variant) {
  * @author Jackson Makinda
  * @version ${palette.version || "1.0.1"}
  * @description ${label} \u2014 premium ${variant} Discord theme with warm orange accents.
- * @source https://github.com/makindajack/makinda-themes
+ * @source https://github.com/chaliidesigns/makinda-themes
  */
 
 :root {
