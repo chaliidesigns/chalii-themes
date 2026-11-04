@@ -233,4 +233,4 @@ code --uninstall-extension makindajack.chalii-themes
 ## Getting Help
 
 - [GitHub Issues](https://github.com/chaliidesigns/chalii-themes/issues)
-- [Email Support](mailto:jacksonmakinda@outlook.com)
+- [Email Support](mailto:hello@makinda.dev)
