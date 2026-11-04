@@ -29,8 +29,8 @@ The repos that anchor the marketplace listings:
 | ------------------------------------------------------------------------------- | ------------------------------------- |
 | [chaliidesigns/chalii-themes](https://github.com/chaliidesigns/chalii-themes)     | source-of-truth + VS Code + JetBrains |
 | [chaliidesigns/chalii-sublime](https://github.com/chaliidesigns/chalii-sublime)   | Package Control                       |
-| [chaliiwaui/makinda-obsidian](https://github.com/chaliiwaui/makinda-obsidian) | Obsidian themes                       |
-| [chaliiwaui/makinda-zed](https://github.com/chaliiwaui/makinda-zed)           | Zed extensions                        |
+| [chaliidesigns/chalii-obsidian](https://github.com/chaliidesigns/chalii-obsidian) | Obsidian themes                       |
+| [chaliidesigns/chalii-zed](https://github.com/chaliidesigns/chalii-zed)           | Zed extensions                        |
 
 > ⚠️ The standalone repos exist because Package Control, Obsidian, and Zed each require the manifest at the **root of a dedicated repo**. Don't merge them back into the monorepo.
 
@@ -179,7 +179,7 @@ git push origin v$NEW
 cd ..
 
 # --- Obsidian ---
-git clone git@github.com:chaliiwaui/makinda-obsidian.git
+git clone git@github.com:chaliidesigns/chalii-obsidian.git
 cd makinda-obsidian
 cp $ROOT/ports/obsidian/manifest.json $ROOT/ports/obsidian/theme.css .
 # Refresh screenshot if themes changed:
@@ -190,13 +190,13 @@ git tag $NEW          # ⚠️ Obsidian forbids the 'v' prefix
 git push origin main
 git push origin $NEW
 gh release create $NEW manifest.json theme.css \
-  --repo chaliiwaui/makinda-obsidian \
+  --repo chaliidesigns/chalii-obsidian \
   --title "$NEW" \
   --notes "Release $NEW"
 cd ..
 
 # --- Zed ---
-git clone git@github.com:chaliiwaui/makinda-zed.git
+git clone git@github.com:chaliidesigns/chalii-zed.git
 cd makinda-zed
 rm -rf themes README.md extension.toml
 cp -r $ROOT/ports/zed/. .
@@ -318,7 +318,7 @@ Then comment `@cla-bot check` on the PR.
 
 ### Obsidian PR rejected for "missing screenshot"
 
-Their validator requires `screenshot.png` at the **root** of `chaliiwaui/makinda-obsidian`, and the manifest version (no `v` prefix) must be the latest GitHub release tag with `manifest.json` and `theme.css` attached as assets.
+Their validator requires `screenshot.png` at the **root** of `chaliidesigns/chalii-obsidian`, and the manifest version (no `v` prefix) must be the latest GitHub release tag with `manifest.json` and `theme.css` attached as assets.
 
 ### Package Control still shows the old version
 
