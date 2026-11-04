@@ -1,7 +1,7 @@
 ;;; makinda-dark-theme.el --- Makinda Dark theme  -*- lexical-binding: t; -*-
 ;;
 ;; Author: Jackson Makinda
-;; URL: https://github.com/makindajack/makinda-themes
+;; URL: https://github.com/chaliidesigns/makinda-themes
 ;; Generated from source/palette.json. Do not edit by hand.
 ;;
 ;;; Commentary:

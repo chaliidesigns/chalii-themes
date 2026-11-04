@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.makindajack.makinda-themes</id>
     <name>Makinda Themes</name>
-    <vendor email="jacksonmakinda@outlook.com" url="https://github.com/makindajack">Jackson Makinda</vendor>
+    <vendor email="jacksonmakinda@outlook.com" url="https://github.com/chaliiwaui">Jackson Makinda</vendor>
 
     <description><![CDATA[
         Premium light and dark themes for JetBrains IDEs with warm orange accents and excellent readability.

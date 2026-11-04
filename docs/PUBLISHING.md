@@ -21,16 +21,16 @@ If this is your first time, read [§ One-time setup](#one-time-setup) first to c
 | 3    | **Eclipse Marketplace**                                                                                                  | Web form                                                                                     | account             | manual upload                                            |
 | 3    | **Nova Extensions**                                                                                                      | `nova extension publish`                                                                     | Panic ID + Nova app | CLI                                                      |
 | —    | **Terminals** (Alacritty, Kitty, Warp, iTerm2, WezTerm, Ghostty, Windows Terminal, Helix, Lapce)                         | No marketplace                                                                               | n/a                 | committed in [ports/](../ports) — users pull from GitHub |
-| —    | **Other** (Slack, Emacs, Neovim, Xcode, TextMate, BBEdit, Notepad++, Eclipse EPF, Discord, Visual Studio settings, Nova) | Distributed via the [GitHub release](https://github.com/makindajack/makinda-themes/releases) | n/a                 | re-tag the release                                       |
+| —    | **Other** (Slack, Emacs, Neovim, Xcode, TextMate, BBEdit, Notepad++, Eclipse EPF, Discord, Visual Studio settings, Nova) | Distributed via the [GitHub release](https://github.com/chaliidesigns/makinda-themes/releases) | n/a                 | re-tag the release                                       |
 
 The repos that anchor the marketplace listings:
 
 | Repo                                                                            | Marketplace                           |
 | ------------------------------------------------------------------------------- | ------------------------------------- |
-| [makindajack/makinda-themes](https://github.com/makindajack/makinda-themes)     | source-of-truth + VS Code + JetBrains |
-| [makindajack/makinda-sublime](https://github.com/makindajack/makinda-sublime)   | Package Control                       |
-| [makindajack/makinda-obsidian](https://github.com/makindajack/makinda-obsidian) | Obsidian themes                       |
-| [makindajack/makinda-zed](https://github.com/makindajack/makinda-zed)           | Zed extensions                        |
+| [chaliidesigns/makinda-themes](https://github.com/chaliidesigns/makinda-themes)     | source-of-truth + VS Code + JetBrains |
+| [chaliidesigns/makinda-sublime](https://github.com/chaliidesigns/makinda-sublime)   | Package Control                       |
+| [chaliiwaui/makinda-obsidian](https://github.com/chaliiwaui/makinda-obsidian) | Obsidian themes                       |
+| [chaliiwaui/makinda-zed](https://github.com/chaliiwaui/makinda-zed)           | Zed extensions                        |
 
 > ⚠️ The standalone repos exist because Package Control, Obsidian, and Zed each require the manifest at the **root of a dedicated repo**. Don't merge them back into the monorepo.
 
@@ -165,7 +165,7 @@ WORK=/tmp/makinda-publish
 mkdir -p $WORK && cd $WORK
 
 # --- Sublime ---
-git clone git@github.com:makindajack/makinda-sublime.git
+git clone git@github.com:chaliidesigns/makinda-sublime.git
 cd makinda-sublime
 rm -f *.sublime-color-scheme messages.json package.json README.md
 rm -rf messages
@@ -179,7 +179,7 @@ git push origin v$NEW
 cd ..
 
 # --- Obsidian ---
-git clone git@github.com:makindajack/makinda-obsidian.git
+git clone git@github.com:chaliiwaui/makinda-obsidian.git
 cd makinda-obsidian
 cp $ROOT/ports/obsidian/manifest.json $ROOT/ports/obsidian/theme.css .
 # Refresh screenshot if themes changed:
@@ -190,13 +190,13 @@ git tag $NEW          # ⚠️ Obsidian forbids the 'v' prefix
 git push origin main
 git push origin $NEW
 gh release create $NEW manifest.json theme.css \
-  --repo makindajack/makinda-obsidian \
+  --repo chaliiwaui/makinda-obsidian \
   --title "$NEW" \
   --notes "Release $NEW"
 cd ..
 
 # --- Zed ---
-git clone git@github.com:makindajack/makinda-zed.git
+git clone git@github.com:chaliiwaui/makinda-zed.git
 cd makinda-zed
 rm -rf themes README.md extension.toml
 cp -r $ROOT/ports/zed/. .
@@ -239,7 +239,7 @@ Tier 2 marketplaces auto-pick-up new tags from the standalone repos **after** th
   ```bash
   cd /tmp/makinda-publish
   rm -rf zed-extensions
-  git clone --depth 1 git@github.com:makindajack/extensions.git zed-extensions
+  git clone --depth 1 git@github.com:chaliiwaui/extensions.git zed-extensions
   cd zed-extensions
   git remote add upstream https://github.com/zed-industries/extensions.git
   git fetch upstream main --depth 1
@@ -265,9 +265,9 @@ Reupload the relevant artifacts to the web portals listed in [§ One-time setup 
 ### 11. Post-release verification
 
 - [ ] <https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes> shows `$NEW` (cache can take ~5 min)
-- [ ] <https://open-vsx.org/extension/makindajack/makinda-themes> shows `$NEW`
+- [ ] <https://open-vsx.org/extension/chaliidesigns/makinda-themes> shows `$NEW`
 - [ ] <https://plugins.jetbrains.com/plugin/me> JetBrains listing shows `$NEW` (after moderation)
-- [ ] [GitHub release](https://github.com/makindajack/makinda-themes/releases) page shows `$NEW` with both artifacts attached
+- [ ] [GitHub release](https://github.com/chaliidesigns/makinda-themes/releases) page shows `$NEW` with both artifacts attached
 - [ ] Both standalone repos show `$NEW` tags
 - [ ] Tier-2 PRs merged or pending
 
@@ -318,11 +318,11 @@ Then comment `@cla-bot check` on the PR.
 
 ### Obsidian PR rejected for "missing screenshot"
 
-Their validator requires `screenshot.png` at the **root** of `makindajack/makinda-obsidian`, and the manifest version (no `v` prefix) must be the latest GitHub release tag with `manifest.json` and `theme.css` attached as assets.
+Their validator requires `screenshot.png` at the **root** of `chaliiwaui/makinda-obsidian`, and the manifest version (no `v` prefix) must be the latest GitHub release tag with `manifest.json` and `theme.css` attached as assets.
 
 ### Package Control still shows the old version
 
-Package Control polls tags every few hours. Confirm your new tag exists at <https://github.com/makindajack/makinda-sublime/tags> and wait. There's no faster path.
+Package Control polls tags every few hours. Confirm your new tag exists at <https://github.com/chaliidesigns/makinda-sublime/tags> and wait. There's no faster path.
 
 ---
 
@@ -337,10 +337,10 @@ npx --yes @vscode/vsce show makindajack.makinda-themes
 
 # Open every marketplace listing in a browser
 open https://marketplace.visualstudio.com/items?itemName=makindajack.makinda-themes
-open https://open-vsx.org/extension/makindajack/makinda-themes
+open https://open-vsx.org/extension/chaliidesigns/makinda-themes
 open https://plugins.jetbrains.com/plugin/me
 open https://packagecontrol.io/packages/Makinda%20Themes
-open https://github.com/makindajack/makinda-themes/releases
+open https://github.com/chaliidesigns/makinda-themes/releases
 ```
 
 ---

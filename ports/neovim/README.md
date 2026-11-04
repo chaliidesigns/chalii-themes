@@ -14,7 +14,7 @@ Treesitter / LSP semantic token support) and Vim (8+ with `termguicolors`).
 
 ```lua
 {
-  "makindajack/makinda-themes",
+  "chaliidesigns/makinda-themes",
   -- The Neovim plugin lives under ports/neovim/ in this monorepo.
   -- If you install from the dedicated mirror once published, drop the `dir`.
   config = function()
@@ -34,7 +34,7 @@ Treesitter / LSP semantic token support) and Vim (8+ with `termguicolors`).
 
 ```lua
 use({
-  "makindajack/makinda-themes",
+  "chaliidesigns/makinda-themes",
   config = function()
     require("makinda").setup({})
     vim.cmd.colorscheme("makinda-dark")
@@ -45,7 +45,7 @@ use({
 ### vim-plug
 
 ```vim
-Plug 'makindajack/makinda-themes'
+Plug 'chaliidesigns/makinda-themes'
 
 " then in your init:
 lua require("makinda").setup({})
