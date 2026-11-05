@@ -45,7 +45,7 @@
       "italic": true
     },
     "processing": {
-      "color": "#ff9452"
+      "color": "#a15400"
     },
     "declaration": {
       "color": "#b34400"
@@ -60,7 +60,7 @@
       "color": "#f43f5e"
     },
     "link": {
-      "color": "#0891b2",
+      "color": "#0e7490",
       "underline": true
     },
     "keywords": {
@@ -83,10 +83,10 @@
       "color": "#6b26c0"
     },
     "identifiers-function": {
-      "color": "#e65800"
+      "color": "#ca4d00"
     },
     "identifiers-method": {
-      "color": "#e65800"
+      "color": "#ca4d00"
     },
     "identifiers-constant": {
       "color": "#853fd9"
@@ -98,48 +98,48 @@
       "color": "#27272a"
     },
     "identifiers-argument": {
-      "color": "#ff9452",
+      "color": "#a15400",
       "italic": true
     },
     "identifiers-decorator": {
-      "color": "#ff9452"
+      "color": "#a15400"
     },
     "identifiers-key": {
-      "color": "#ff9452"
+      "color": "#a15400"
     },
     "strings": {
       "color": "#0d7377"
     },
     "strings-special": {
-      "color": "#0891b2"
+      "color": "#0e7490"
     },
     "regex": {
-      "color": "#0891b2"
+      "color": "#0e7490"
     },
     "regex-special": {
-      "color": "#0891b2"
+      "color": "#0e7490"
     },
     "numbers": {
-      "color": "#ff711a"
+      "color": "#c2410c"
     },
     "numbers-special": {
       "color": "#853fd9"
     },
     "tags": {
-      "color": "#e65800"
+      "color": "#ca4d00"
     },
     "tags-attributes": {
-      "color": "#ff9452"
+      "color": "#a15400"
     },
     "tags-values": {
       "color": "#0d7377"
     },
     "markup-headings": {
-      "color": "#e65800",
+      "color": "#ca4d00",
       "bold": true
     },
     "markup-bold": {
-      "color": "#e65800",
+      "color": "#ca4d00",
       "bold": true
     },
     "markup-italic": {
@@ -147,11 +147,11 @@
       "italic": true
     },
     "markup-link": {
-      "color": "#0891b2",
+      "color": "#0e7490",
       "underline": true
     },
     "markup-list": {
-      "color": "#e65800"
+      "color": "#ca4d00"
     },
     "markup-code": {
       "color": "#0d7377"
@@ -167,20 +167,20 @@
     "cursor": "#e65800",
     "selection": "#f4f4f5",
     "black": "#52525b",
-    "red": "#e11d48",
-    "green": "#059669",
-    "yellow": "#d97706",
-    "blue": "#2563eb",
+    "red": "#be123c",
+    "green": "#047857",
+    "yellow": "#b45309",
+    "blue": "#1d4ed8",
     "magenta": "#6b26c0",
-    "cyan": "#06b6d4",
+    "cyan": "#0e7490",
     "white": "#e4e4e7",
     "bright-black": "#71717a",
-    "bright-red": "#fb7185",
-    "bright-green": "#10b981",
-    "bright-yellow": "#fbbf24",
-    "bright-blue": "#60a5fa",
+    "bright-red": "#e11d48",
+    "bright-green": "#059669",
+    "bright-yellow": "#d97706",
+    "bright-blue": "#2563eb",
     "bright-magenta": "#a26ee2",
-    "bright-cyan": "#22d3ee",
+    "bright-cyan": "#0891b2",
     "bright-white": "#ffffff"
   }
 }

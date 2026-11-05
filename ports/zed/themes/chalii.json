@@ -76,9 +76,9 @@
         "error": "#F43F5EFF",
         "error.background": "#FFFFFFFF",
         "error.border": "#F43F5EFF",
-        "warning": "#F59E0BFF",
+        "warning": "#D97706FF",
         "warning.background": "#FFFFFFFF",
-        "warning.border": "#F59E0BFF",
+        "warning.border": "#D97706FF",
         "info": "#3B82F6FF",
         "info.background": "#FFFFFFFF",
         "info.border": "#3B82F6FF",
@@ -94,18 +94,18 @@
         "unreachable": "#A1A1AAFF",
         "unreachable.background": "#FFFFFFFF",
         "unreachable.border": "#A1A1AAFF",
-        "conflict": "#FF9452FF",
+        "conflict": "#A15400FF",
         "conflict.background": "#FFFFFFFF",
-        "conflict.border": "#FF9452FF",
+        "conflict.border": "#A15400FF",
         "created": "#047857FF",
         "created.background": "#FFFFFFFF",
         "created.border": "#047857FF",
         "deleted": "#B34400FF",
         "deleted.background": "#FFFFFFFF",
         "deleted.border": "#B34400FF",
-        "modified": "#FF9452FF",
+        "modified": "#A15400FF",
         "modified.background": "#FFFFFFFF",
-        "modified.border": "#FF9452FF",
+        "modified.border": "#A15400FF",
         "renamed": "#3B82F6FF",
         "renamed.background": "#FFFFFFFF",
         "renamed.border": "#3B82F6FF",
@@ -122,30 +122,30 @@
         "terminal.ansi.black": "#52525BFF",
         "terminal.ansi.bright_black": "#71717AFF",
         "terminal.ansi.dim_black": "#52525BFF",
-        "terminal.ansi.red": "#E11D48FF",
-        "terminal.ansi.bright_red": "#FB7185FF",
-        "terminal.ansi.dim_red": "#E11D48FF",
-        "terminal.ansi.green": "#059669FF",
-        "terminal.ansi.bright_green": "#10B981FF",
-        "terminal.ansi.dim_green": "#059669FF",
-        "terminal.ansi.yellow": "#D97706FF",
-        "terminal.ansi.bright_yellow": "#FBBF24FF",
-        "terminal.ansi.dim_yellow": "#D97706FF",
-        "terminal.ansi.blue": "#2563EBFF",
-        "terminal.ansi.bright_blue": "#60A5FAFF",
-        "terminal.ansi.dim_blue": "#2563EBFF",
+        "terminal.ansi.red": "#BE123CFF",
+        "terminal.ansi.bright_red": "#E11D48FF",
+        "terminal.ansi.dim_red": "#BE123CFF",
+        "terminal.ansi.green": "#047857FF",
+        "terminal.ansi.bright_green": "#059669FF",
+        "terminal.ansi.dim_green": "#047857FF",
+        "terminal.ansi.yellow": "#B45309FF",
+        "terminal.ansi.bright_yellow": "#D97706FF",
+        "terminal.ansi.dim_yellow": "#B45309FF",
+        "terminal.ansi.blue": "#1D4ED8FF",
+        "terminal.ansi.bright_blue": "#2563EBFF",
+        "terminal.ansi.dim_blue": "#1D4ED8FF",
         "terminal.ansi.magenta": "#6B26C0FF",
         "terminal.ansi.bright_magenta": "#A26EE2FF",
         "terminal.ansi.dim_magenta": "#6B26C0FF",
-        "terminal.ansi.cyan": "#06B6D4FF",
-        "terminal.ansi.bright_cyan": "#22D3EEFF",
-        "terminal.ansi.dim_cyan": "#06B6D4FF",
+        "terminal.ansi.cyan": "#0E7490FF",
+        "terminal.ansi.bright_cyan": "#0891B2FF",
+        "terminal.ansi.dim_cyan": "#0E7490FF",
         "terminal.ansi.white": "#E4E4E7FF",
         "terminal.ansi.bright_white": "#FFFFFFFF",
         "terminal.ansi.dim_white": "#E4E4E7FF",
         "syntax": {
           "attribute": {
-            "color": "#FF9452FF"
+            "color": "#A15400FF"
           },
           "boolean": {
             "color": "#853FD9FF"
@@ -172,20 +172,20 @@
             "font_style": "italic"
           },
           "emphasis.strong": {
-            "color": "#E65800FF",
+            "color": "#CA4D00FF",
             "font_weight": 700
           },
           "enum": {
             "color": "#6B26C0FF"
           },
           "function": {
-            "color": "#E65800FF"
+            "color": "#CA4D00FF"
           },
           "function.builtin": {
-            "color": "#E65800FF"
+            "color": "#CA4D00FF"
           },
           "function.method": {
-            "color": "#E65800FF"
+            "color": "#CA4D00FF"
           },
           "hint": {
             "color": "#52525BFF"
@@ -197,22 +197,22 @@
             "color": "#853FD9FF"
           },
           "link_text": {
-            "color": "#0891B2FF"
+            "color": "#0E7490FF"
           },
           "link_uri": {
-            "color": "#0891B2FF"
+            "color": "#0E7490FF"
           },
           "namespace": {
             "color": "#853FD9FF"
           },
           "number": {
-            "color": "#FF711AFF"
+            "color": "#C2410CFF"
           },
           "operator": {
             "color": "#71717AFF"
           },
           "preproc": {
-            "color": "#FF9452FF"
+            "color": "#A15400FF"
           },
           "primary": {
             "color": "#27272AFF"
@@ -230,7 +230,7 @@
             "color": "#52525BFF"
           },
           "punctuation.list_marker": {
-            "color": "#E65800FF"
+            "color": "#CA4D00FF"
           },
           "punctuation.special": {
             "color": "#B34400FF"
@@ -239,25 +239,25 @@
             "color": "#0D7377FF"
           },
           "string.escape": {
-            "color": "#0891B2FF"
+            "color": "#0E7490FF"
           },
           "string.regex": {
-            "color": "#0891B2FF"
+            "color": "#0E7490FF"
           },
           "string.special": {
-            "color": "#0891B2FF"
+            "color": "#0E7490FF"
           },
           "string.special.symbol": {
-            "color": "#0891B2FF"
+            "color": "#0E7490FF"
           },
           "tag": {
-            "color": "#E65800FF"
+            "color": "#CA4D00FF"
           },
           "text.literal": {
             "color": "#0D7377FF"
           },
           "title": {
-            "color": "#E65800FF",
+            "color": "#CA4D00FF",
             "font_weight": 700
           },
           "type": {
@@ -270,7 +270,7 @@
             "color": "#27272AFF"
           },
           "variable.parameter": {
-            "color": "#FF9452FF",
+            "color": "#A15400FF",
             "font_style": "italic"
           },
           "variable.special": {
