@@ -5,7 +5,7 @@
 <h1 align="center">Chalii Themes</h1>
 
 <p align="center">
-  A premium light + dark theme family with warm orange accents — shipping to <strong>20+ editors, IDEs, terminals and apps</strong> from a single source palette.<br>
+  A premium light + dark theme family with warm orange accents - shipping to <strong>20+ editors, IDEs, terminals and apps</strong> from a single source palette.<br>
   Generated, contrast-checked and validated on every commit.
 </p>
 
@@ -44,18 +44,18 @@
 
 ## 🌟 Highlights
 
-- 🎨 **One palette, every editor** — `source/palette.json` + `source/tokens.json` generate VS Code, JetBrains, Sublime, Zed, Neovim, Xcode, Helix, terminals, Slack, Discord and Obsidian
-- ☀️🌙 **Two complementary variants** — Chalii Light and Chalii Dark share the same brand language so switching keeps your code visually consistent
-- ✅ **Contrast-checked** — `npm run contrast` verifies WCAG ratios for text, comments, types, sidebar and status-bar pairs on every CI run
-- 🔍 **Strictly validated** — theme JSON is checked for unknown keys and bad colours (`npm run validate:strict`) before anything ships
-- 🚢 **Tag-to-release pipeline** — pushing `v*` packages the VSIX, publishes to the VS Code Marketplace + Open VSX, and attaches a ports archive to a GitHub Release
+- 🎨 **One palette, every editor** - `source/palette.json` + `source/tokens.json` generate VS Code, JetBrains, Sublime, Zed, Neovim, Xcode, Helix, terminals, Slack, Discord and Obsidian
+- ☀️🌙 **Two complementary variants** - Chalii Light and Chalii Dark share the same brand language so switching keeps your code visually consistent
+- ✅ **Contrast-checked** - `npm run contrast` verifies WCAG ratios for text, comments, types, sidebar and status-bar pairs on every CI run
+- 🔍 **Strictly validated** - theme JSON is checked for unknown keys and bad colours (`npm run validate:strict`) before anything ships
+- 🚢 **Tag-to-release pipeline** - pushing `v*` packages the VSIX, publishes to the VS Code Marketplace + Open VSX, and attaches a ports archive to a GitHub Release
 
 ## ✨ Features
 
 This extension ships **two** complementary themes:
 
-- **Chalii Light** — Clean white editor with subtle gray sidebars, warm orange accents, and high-contrast syntax highlighting for long, comfortable coding sessions.
-- **Chalii Dark** — Deep `#0e0e0f` background with vibrant orange accents, purple types, and teal strings. 140+ token scopes and 200+ UI color definitions.
+- **Chalii Light** - Clean white editor with subtle gray sidebars, warm orange accents, and high-contrast syntax highlighting for long, comfortable coding sessions.
+- **Chalii Dark** - Deep `#0e0e0f` background with vibrant orange accents, purple types, and teal strings. 140+ token scopes and 200+ UI color definitions.
 
 ### Color Palette
 
@@ -170,7 +170,7 @@ See [docs/INSTALLATION.md](docs/INSTALLATION.md) for editor-by-editor walkthroug
 
 ### Icon Themes
 
-Pair Chalii Themes with the companion **[Chalii Icons](https://marketplace.visualstudio.com/items?itemName=makindajack.chalii-icons)** pack — file and product icons colour-tuned to this palette:
+Pair Chalii Themes with the companion **[Chalii Icons](https://marketplace.visualstudio.com/items?itemName=makindajack.chalii-icons)** pack - file and product icons colour-tuned to this palette:
 
 ```json
 {
@@ -183,8 +183,8 @@ Pair Chalii Themes with the companion **[Chalii Icons](https://marketplace.visua
 Other packs that also pair well:
 
 - [Material Product Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons) by Philipp Kief
-- [Nomo Light Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-light) — pairs well with Chalii Light
-- [Nomo Dark Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-dark) — pairs well with Chalii Dark
+- [Nomo Light Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-light) - pairs well with Chalii Light
+- [Nomo Dark Icon Theme](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-icontheme-nomo-dark) - pairs well with Chalii Dark
 
 ### Font Recommendations
 
@@ -202,37 +202,37 @@ Other packs that also pair well:
 ### Chalii Light
 
 <p align="center">
-  <img src="images/light-typescript.png" alt="Chalii Light — TypeScript" width="800">
+  <img src="images/light-typescript.png" alt="Chalii Light - TypeScript" width="800">
 </p>
 <p align="center">
-  <img src="images/light-python.png" alt="Chalii Light — Python" width="400">
-  <img src="images/light-rust.png" alt="Chalii Light — Rust" width="400">
+  <img src="images/light-python.png" alt="Chalii Light - Python" width="400">
+  <img src="images/light-rust.png" alt="Chalii Light - Rust" width="400">
 </p>
 <p align="center">
-  <img src="images/light-go.png" alt="Chalii Light — Go" width="400">
-  <img src="images/light-markdown.png" alt="Chalii Light — Markdown" width="400">
+  <img src="images/light-go.png" alt="Chalii Light - Go" width="400">
+  <img src="images/light-markdown.png" alt="Chalii Light - Markdown" width="400">
 </p>
 <p align="center">
-  <img src="images/light-json.png" alt="Chalii Light — JSON" width="400">
-  <img src="images/light-html.png" alt="Chalii Light — HTML" width="400">
+  <img src="images/light-json.png" alt="Chalii Light - JSON" width="400">
+  <img src="images/light-html.png" alt="Chalii Light - HTML" width="400">
 </p>
 
 ### Chalii Dark
 
 <p align="center">
-  <img src="images/dark-typescript.png" alt="Chalii Dark — TypeScript" width="800">
+  <img src="images/dark-typescript.png" alt="Chalii Dark - TypeScript" width="800">
 </p>
 <p align="center">
-  <img src="images/dark-python.png" alt="Chalii Dark — Python" width="400">
-  <img src="images/dark-rust.png" alt="Chalii Dark — Rust" width="400">
+  <img src="images/dark-python.png" alt="Chalii Dark - Python" width="400">
+  <img src="images/dark-rust.png" alt="Chalii Dark - Rust" width="400">
 </p>
 <p align="center">
-  <img src="images/dark-go.png" alt="Chalii Dark — Go" width="400">
-  <img src="images/dark-markdown.png" alt="Chalii Dark — Markdown" width="400">
+  <img src="images/dark-go.png" alt="Chalii Dark - Go" width="400">
+  <img src="images/dark-markdown.png" alt="Chalii Dark - Markdown" width="400">
 </p>
 <p align="center">
-  <img src="images/dark-json.png" alt="Chalii Dark — JSON" width="400">
-  <img src="images/dark-html.png" alt="Chalii Dark — HTML" width="400">
+  <img src="images/dark-json.png" alt="Chalii Dark - JSON" width="400">
+  <img src="images/dark-html.png" alt="Chalii Dark - HTML" width="400">
 </p>
 
 Screenshots are rendered with Shiki + Playwright via `npm run screenshots`.
@@ -316,7 +316,7 @@ Contributions are welcome. Please read the [Contributing Guide](docs/CONTRIBUTIN
 
 ## 👤 Author
 
-**Chalii Designs** — design & engineering studio by Jackson Makinda — [makindajackson.com](https://makindajackson.com)
+**Chalii Designs** - design & engineering studio by Jackson Makinda - [makindajackson.com](https://makindajackson.com)
 
 - 📧 Email: me@makindajackson.com
 - 💼 LinkedIn: [Jackson Makinda](https://linkedin.com/in/makindajack)
