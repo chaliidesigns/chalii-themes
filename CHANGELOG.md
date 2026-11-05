@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Light theme: syntax colors for functions, tags, numbers, parameters, attributes, decorators, links and regular expressions were too pale on white, down to 2.2 : 1. They now reach at least 4.5 : 1.
+- Light theme: invalid, broken, deprecated and unimplemented code was drawn white on white and could not be seen. These now have a colored background.
+- Light theme: line numbers, the focus ring, input placeholders, inactive icons, indent guides, whitespace marks and scrollbar thumbs were too faint. Buttons, badges and the debug and remote status items use a darker orange, so white text on them reaches 5.6 : 1.
+- Light theme: the terminal yellow, cyan, green and red, and their bright versions, are darker so they stay readable on white.
+- Dark theme: the focus ring was gray and is now the brand orange. Badge and status text, inactive tabs, breadcrumbs, peek view results and input placeholders reach 4.5 : 1, and line numbers reach 3 : 1.
+
+### Added
+- Bracket pair colors, inlay hint, ghost text and description colors, so VS Code no longer falls back to its default colors for them.
+- `npm run contrast` now also tests the built theme files (syntax, brackets, UI pairs and terminal colors), and `npm run check` fails if one drops below its target.
+
 ### Changed
 - Rebranded from **Makinda Themes** to **Chalii Themes**: display names, theme/scheme names, file names and package identifiers now use "Chalii". Entries below this one keep the historical names.
 

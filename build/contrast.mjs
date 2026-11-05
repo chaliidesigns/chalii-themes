@@ -43,10 +43,7 @@ const checks = [
     { label: "comment on editor", fg: "syntax.comment", bg: "bg.editor", min: 4.5 },
     { label: "string on editor", fg: "syntax.string", bg: "bg.editor", min: 4.5 },
     { label: "keyword on editor", fg: "syntax.keyword", bg: "bg.editor", min: 4.5 },
-    // syntax.function is the brand orange. We accept it as a "decorative accent"
-    // (AA-large 3.0 instead of 4.5). See docs/THEMES.md → Contrast targets and
-    // docs/TODO.md → Known issues for the rationale.
-    { label: "function on editor (brand)", fg: "syntax.function", bg: "bg.editor", min: 3.0, advisory: true },
+    { label: "function on editor", fg: "syntax.function", bg: "bg.editor", min: 4.5 },
     { label: "type on editor", fg: "syntax.type", bg: "bg.editor", min: 4.5 },
     { label: "sidebar text on sidebar", fg: "fg.default", bg: "bg.sidebar", min: 4.5 },
     { label: "muted on sidebar", fg: "fg.muted", bg: "bg.sidebar", min: 4.5 },
