@@ -5,7 +5,7 @@
     <key>name</key>
     <string>Chalii Light</string>
     <key>uuid</key>
-    <string>A66980FF-D3BE-4122-A7F6-6DB29D9AF01B</string>
+    <string>6E234323-443B-402E-A2BD-1F03694616DF</string>
     <key>author</key>
     <string>Jackson Makinda</string>
     <key>colorSpaceName</key>
@@ -75,7 +75,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#0891B2</string>
+                    <string>#0E7490</string>
                 </dict>
             </dict>
         <dict>
@@ -86,7 +86,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#0891B2</string>
+                    <string>#0E7490</string>
                 </dict>
             </dict>
         <dict>
@@ -97,7 +97,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#FF711A</string>
+                    <string>#C2410C</string>
                 </dict>
             </dict>
         <dict>
@@ -174,7 +174,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#E65800</string>
+                    <string>#CA4D00</string>
                 </dict>
             </dict>
         <dict>
@@ -218,7 +218,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#FF9452</string>
+                    <string>#A15400</string>
                     <key>fontStyle</key>
                     <string>italic</string>
                 </dict>
@@ -255,7 +255,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#E65800</string>
+                    <string>#CA4D00</string>
                 </dict>
             </dict>
         <dict>
@@ -266,7 +266,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#FF9452</string>
+                    <string>#A15400</string>
                 </dict>
             </dict>
         <dict>
@@ -277,7 +277,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#FF9452</string>
+                    <string>#A15400</string>
                 </dict>
             </dict>
         <dict>
@@ -288,7 +288,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#E65800</string>
+                    <string>#CA4D00</string>
                     <key>fontStyle</key>
                     <string>bold</string>
                 </dict>
@@ -301,7 +301,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#E65800</string>
+                    <string>#CA4D00</string>
                     <key>fontStyle</key>
                     <string>bold</string>
                 </dict>
@@ -327,7 +327,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#0891B2</string>
+                    <string>#0E7490</string>
                 </dict>
             </dict>
         <dict>
@@ -362,7 +362,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#E65800</string>
+                    <string>#CA4D00</string>
                 </dict>
             </dict>
         <dict>
@@ -395,7 +395,7 @@
                 <key>settings</key>
                 <dict>
                     <key>foreground</key>
-                    <string>#FF9452</string>
+                    <string>#A15400</string>
                 </dict>
             </dict>
         <dict>

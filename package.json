@@ -34,7 +34,11 @@
     "jackson makinda",
     "color theme",
     "syntax highlighting",
-    "editor theme"
+    "editor theme",
+    "accessible",
+    "wcag",
+    "dark mode",
+    "light mode"
   ],
   "engines": {
     "vscode": "^1.74.0"
@@ -67,8 +71,8 @@
     "validate": "node build/validate.mjs",
     "validate:strict": "node build/validate.mjs --strict",
     "validate:json": "node build/validate.mjs --json",
-    "contrast": "node build/contrast.mjs",
-    "contrast:strict": "node build/contrast.mjs --strict",
+    "contrast": "node build/contrast.mjs && node build/contrast-theme.mjs",
+    "contrast:strict": "node build/contrast.mjs --strict && node build/contrast-theme.mjs --strict",
     "check": "npm run validate:strict && npm run contrast",
     "build": "node build/index.mjs",
     "build:vscode": "node build/vscode.mjs",

@@ -46,7 +46,7 @@
 
 - 🎨 **One palette, every editor** - `source/palette.json` + `source/tokens.json` generate VS Code, JetBrains, Sublime, Zed, Neovim, Xcode, Helix, terminals, Slack, Discord and Obsidian
 - ☀️🌙 **Two complementary variants** - Chalii Light and Chalii Dark share the same brand language so switching keeps your code visually consistent
-- ✅ **Contrast-checked** - `npm run contrast` verifies WCAG ratios for text, comments, types, sidebar and status-bar pairs on every CI run
+- ✅ **Contrast-checked** - `npm run contrast` tests the built themes on every CI run: syntax and UI text at 4.5 : 1 or better, icons and the focus ring at 3 : 1 or better, in both variants
 - 🔍 **Strictly validated** - theme JSON is checked for unknown keys and bad colours (`npm run validate:strict`) before anything ships
 - 🚢 **Tag-to-release pipeline** - pushing `v*` packages the VSIX, publishes to the VS Code Marketplace + Open VSX, and attaches a ports archive to a GitHub Release
 

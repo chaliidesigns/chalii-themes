@@ -101,16 +101,16 @@
     </dict>
     <key>NumberColor</key>
     <dict>
-        <key>red</key><real>1.000000</real>
-        <key>green</key><real>0.443137</real>
-        <key>blue</key><real>0.101961</real>
+        <key>red</key><real>0.760784</real>
+        <key>green</key><real>0.254902</real>
+        <key>blue</key><real>0.047059</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
     <key>AttributeColor</key>
     <dict>
-        <key>red</key><real>1.000000</real>
-        <key>green</key><real>0.580392</real>
-        <key>blue</key><real>0.321569</real>
+        <key>red</key><real>0.631373</real>
+        <key>green</key><real>0.329412</real>
+        <key>blue</key><real>0.000000</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
     <key>AttributeValueColor</key>
@@ -122,15 +122,15 @@
     </dict>
     <key>TagColor</key>
     <dict>
-        <key>red</key><real>0.901961</real>
-        <key>green</key><real>0.345098</real>
+        <key>red</key><real>0.792157</real>
+        <key>green</key><real>0.301961</real>
         <key>blue</key><real>0.000000</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
     <key>FunctionColor</key>
     <dict>
-        <key>red</key><real>0.901961</real>
-        <key>green</key><real>0.345098</real>
+        <key>red</key><real>0.792157</real>
+        <key>green</key><real>0.301961</real>
         <key>blue</key><real>0.000000</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
@@ -164,9 +164,9 @@
     </dict>
     <key>ProcessingInstructionColor</key>
     <dict>
-        <key>red</key><real>1.000000</real>
-        <key>green</key><real>0.580392</real>
-        <key>blue</key><real>0.321569</real>
+        <key>red</key><real>0.631373</real>
+        <key>green</key><real>0.329412</real>
+        <key>blue</key><real>0.000000</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
     <key>EntityColor</key>
@@ -178,9 +178,9 @@
     </dict>
     <key>DOCTYPEColor</key>
     <dict>
-        <key>red</key><real>1.000000</real>
-        <key>green</key><real>0.580392</real>
-        <key>blue</key><real>0.321569</real>
+        <key>red</key><real>0.631373</real>
+        <key>green</key><real>0.329412</real>
+        <key>blue</key><real>0.000000</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
     <key>CDATAColor</key>
@@ -192,8 +192,8 @@
     </dict>
     <key>HTMLSpecialColor</key>
     <dict>
-        <key>red</key><real>0.901961</real>
-        <key>green</key><real>0.345098</real>
+        <key>red</key><real>0.792157</real>
+        <key>green</key><real>0.301961</real>
         <key>blue</key><real>0.000000</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
@@ -213,15 +213,15 @@
     </dict>
     <key>DiffChangedColor</key>
     <dict>
-        <key>red</key><real>1.000000</real>
-        <key>green</key><real>0.580392</real>
-        <key>blue</key><real>0.321569</real>
+        <key>red</key><real>0.631373</real>
+        <key>green</key><real>0.329412</real>
+        <key>blue</key><real>0.000000</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
     <key>MarkdownHeaderColor</key>
     <dict>
-        <key>red</key><real>0.901961</real>
-        <key>green</key><real>0.345098</real>
+        <key>red</key><real>0.792157</real>
+        <key>green</key><real>0.301961</real>
         <key>blue</key><real>0.000000</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
@@ -234,9 +234,9 @@
     </dict>
     <key>MarkdownLinkColor</key>
     <dict>
-        <key>red</key><real>0.031373</real>
-        <key>green</key><real>0.568627</real>
-        <key>blue</key><real>0.698039</real>
+        <key>red</key><real>0.054902</real>
+        <key>green</key><real>0.454902</real>
+        <key>blue</key><real>0.564706</real>
         <key>alpha</key><real>1.000000</real>
     </dict>
     <key>MarkdownEmphasisColor</key>

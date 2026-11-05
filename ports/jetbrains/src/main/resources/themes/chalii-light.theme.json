@@ -21,7 +21,7 @@
     "borderStrong": "#d4d4d8",
     "borderFocus": "#e65800",
     "stateError": "#f43f5e",
-    "stateWarning": "#f59e0b",
+    "stateWarning": "#d97706",
     "stateInfo": "#3b82f6",
     "stateSuccess": "#10b981"
   },
