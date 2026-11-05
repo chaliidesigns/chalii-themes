@@ -312,11 +312,11 @@ Contributions are welcome. Please read the [Contributing Guide](docs/CONTRIBUTIN
 
 ## 📄 License
 
-[MIT](LICENSE) © Jackson Makinda
+[MIT](LICENSE) © Chalii Designs
 
 ## 👤 Author
 
-**Chalii Designs** - design & engineering studio by Jackson Makinda - [makindajackson.com](https://makindajackson.com)
+**Chalii Designs** - design & engineering studio by Chalii wa UX/UI - [@chaliiwaui](https://github.com/chaliiwaui)
 
 - 📧 Email: me@makindajackson.com
 - 💼 LinkedIn: [Jackson Makinda](https://linkedin.com/in/makindajack)
